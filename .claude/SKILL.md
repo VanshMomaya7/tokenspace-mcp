@@ -187,10 +187,10 @@ edit_class_method(
 
 Measured on **406 real functions** from requests, flask, fastapi, django, httpx, pydantic, black, click, and rich. All 10 files passed libcst round-trip.
 
-| Scenario | str_replace (avg tokens) | Scalpel (avg tokens) | Reduction |
+| Scenario | str_replace total tokens | Scalpel total tokens | Reduction |
 |---|---|---|---|
-| Single edit | 36,907 | 18,674 | **49.4%** |
-| 5 edits / same file | 70,948 | 2,039 | **95.4%** |
+| Single edit — 406 functions | 36,907 | 18,674 | **49.4%** |
+| 5 edits / file — 10 files | 70,948 | 2,039 | **95.4%** |
 
 The multi-edit gap is large because `str_replace` pays full file content on every single edit. Scalpel pays for `read_structure` once and only the function name + new body per edit.
 
