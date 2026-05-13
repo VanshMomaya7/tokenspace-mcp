@@ -1,0 +1,1219 @@
+file,function,approach,success,input_tokens,output_tokens,total_tokens,blast_radius,patch_locality,error
+requests_auth.py,_basic_auth_str,str_replace,True,3637,2885,6522,,,
+requests_auth.py,_basic_auth_str,scalpel,True,3264,116,3380,0.0,0.9971830985915493,
+requests_auth.py,_basic_auth_str,measure_edit,True,3264,114,3378,0.0,0.9971830985915493,
+requests_auth.py,HTTPBasicAuth.__eq__,str_replace,True,2953,2885,5838,,,
+requests_auth.py,HTTPBasicAuth.__eq__,scalpel,True,2925,104,3029,0.0,0.9971830985915493,
+requests_auth.py,HTTPBasicAuth.__eq__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.__init__,str_replace,True,2947,2885,5832,,,
+requests_auth.py,HTTPDigestAuth.__init__,scalpel,True,2922,289,3211,0.0,0.9561643835616438,
+requests_auth.py,HTTPDigestAuth.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.init_per_thread_state,str_replace,True,3029,2885,5914,,,
+requests_auth.py,HTTPDigestAuth.init_per_thread_state,scalpel,True,2964,131,3095,0.0,0.9971751412429378,
+requests_auth.py,HTTPDigestAuth.init_per_thread_state,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.build_digest_header,str_replace,True,4743,2885,7628,,,
+requests_auth.py,HTTPDigestAuth.build_digest_header,scalpel,True,3820,149,3969,0.0,0.9887323943661972,
+requests_auth.py,HTTPDigestAuth.build_digest_header,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.handle_redirect,str_replace,True,2945,2885,5830,,,
+requests_auth.py,HTTPDigestAuth.handle_redirect,scalpel,True,2920,123,3043,0.0,0.9971830985915493,
+requests_auth.py,HTTPDigestAuth.handle_redirect,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.handle_401,str_replace,True,3701,2885,6586,,,
+requests_auth.py,HTTPDigestAuth.handle_401,scalpel,True,3299,184,3483,0.0,0.9830985915492958,
+requests_auth.py,HTTPDigestAuth.handle_401,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.__call__,str_replace,True,3287,2885,6172,,,
+requests_auth.py,HTTPDigestAuth.__call__,scalpel,True,3092,127,3219,0.0,0.9971751412429378,
+requests_auth.py,HTTPDigestAuth.__call__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_auth.py,HTTPDigestAuth.__eq__,str_replace,True,2953,2885,5838,,,
+requests_auth.py,HTTPDigestAuth.__eq__,scalpel,True,2925,102,3027,0.0,0.9971830985915493,
+requests_auth.py,HTTPDigestAuth.__eq__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+requests_utils.py,dict_to_sequence,str_replace,True,8751,8695,17446,,,
+requests_utils.py,dict_to_sequence,scalpel,True,8726,120,8846,0.0,0.9991349480968859,
+requests_utils.py,dict_to_sequence,measure_edit,True,8726,118,8844,0.0,0.9991349480968859,
+requests_utils.py,super_len,str_replace,True,9811,8695,18506,,,
+requests_utils.py,super_len,scalpel,True,9255,90,9345,0.0,0.9991349480968859,
+requests_utils.py,super_len,measure_edit,True,9255,88,9343,0.0,0.9991349480968859,
+requests_utils.py,get_netrc_auth,str_replace,True,9347,8695,18042,,,
+requests_utils.py,get_netrc_auth,scalpel,True,9025,120,9145,0.0,0.9991349480968859,
+requests_utils.py,get_netrc_auth,measure_edit,True,9025,118,9143,0.0,0.9991349480968859,
+requests_utils.py,guess_filename,str_replace,True,8853,8695,17548,,,
+requests_utils.py,guess_filename,scalpel,True,8776,129,8905,0.0,0.9991349480968859,
+requests_utils.py,guess_filename,measure_edit,True,8776,129,8905,0.0,0.9991349480968859,
+requests_utils.py,extract_zipped_paths,str_replace,True,9331,8695,18026,,,
+requests_utils.py,extract_zipped_paths,scalpel,True,9017,122,9139,0.0,0.9991349480968859,
+requests_utils.py,extract_zipped_paths,measure_edit,True,9017,118,9135,0.0,0.9991349480968859,
+requests_utils.py,atomic_open,str_replace,True,8845,8695,17540,,,
+requests_utils.py,atomic_open,scalpel,True,8772,124,8896,0.0,0.9991349480968859,
+requests_utils.py,atomic_open,measure_edit,True,8772,122,8894,0.0,0.9991349480968859,
+requests_utils.py,from_key_val_list,str_replace,True,9033,8695,17728,,,
+requests_utils.py,from_key_val_list,scalpel,True,8868,139,9007,0.0,0.9991349480968859,
+requests_utils.py,from_key_val_list,measure_edit,True,8868,137,9005,0.0,0.9991349480968859,
+requests_utils.py,to_key_val_list,str_replace,True,9051,8695,17746,,,
+requests_utils.py,to_key_val_list,scalpel,True,8877,655,9532,0.0,0.9479338842975207,
+requests_utils.py,to_key_val_list,measure_edit,True,8877,651,9528,0.0,0.9479338842975207,
+requests_utils.py,parse_list_header,str_replace,True,9177,8695,17872,,,
+requests_utils.py,parse_list_header,scalpel,True,8939,124,9063,0.0,0.9991349480968859,
+requests_utils.py,parse_list_header,measure_edit,True,8939,120,9059,0.0,0.9991349480968859,
+requests_utils.py,parse_dict_header,str_replace,True,9217,8695,17912,,,
+requests_utils.py,parse_dict_header,scalpel,True,8959,129,9088,0.0,0.9991349480968859,
+requests_utils.py,parse_dict_header,measure_edit,True,8959,125,9084,0.0,0.9991349480968859,
+requests_utils.py,unquote_header_value,str_replace,True,9221,8695,17916,,,
+requests_utils.py,unquote_header_value,scalpel,True,8962,148,9110,0.0,0.9991349480968859,
+requests_utils.py,unquote_header_value,measure_edit,True,8962,142,9104,0.0,0.9991349480968859,
+requests_utils.py,dict_from_cookiejar,str_replace,True,8801,8695,17496,,,
+requests_utils.py,dict_from_cookiejar,scalpel,True,8752,110,8862,0.0,0.9991349480968859,
+requests_utils.py,dict_from_cookiejar,measure_edit,True,8752,110,8862,0.0,0.9991349480968859,
+requests_utils.py,add_dict_to_cookiejar,str_replace,True,8815,8695,17510,,,
+requests_utils.py,add_dict_to_cookiejar,scalpel,True,8760,114,8874,0.0,0.9991349480968859,
+requests_utils.py,add_dict_to_cookiejar,measure_edit,True,8760,114,8874,0.0,0.9991349480968859,
+requests_utils.py,get_encodings_from_content,str_replace,True,9085,8695,17780,,,
+requests_utils.py,get_encodings_from_content,scalpel,True,8895,106,9001,0.0,0.9991349480968859,
+requests_utils.py,get_encodings_from_content,measure_edit,True,8895,104,8999,0.0,0.9991349480968859,
+requests_utils.py,_parse_content_type_header,str_replace,True,8989,8695,17684,,,
+requests_utils.py,_parse_content_type_header,scalpel,True,8846,105,8951,0.0,0.9991349480968859,
+requests_utils.py,_parse_content_type_header,measure_edit,True,8846,103,8949,0.0,0.9991349480968859,
+requests_utils.py,get_encoding_from_headers,str_replace,True,8991,8695,17686,,,
+requests_utils.py,get_encoding_from_headers,scalpel,True,8847,107,8954,0.0,0.9991349480968859,
+requests_utils.py,get_encoding_from_headers,measure_edit,True,8847,105,8952,0.0,0.9991349480968859,
+requests_utils.py,stream_decode_response_unicode,str_replace,True,8849,8695,17544,,,
+requests_utils.py,stream_decode_response_unicode,scalpel,True,8776,110,8886,0.0,0.9991349480968859,
+requests_utils.py,stream_decode_response_unicode,measure_edit,True,8776,108,8884,0.0,0.9991349480968859,
+requests_utils.py,iter_slices,str_replace,True,8813,8695,17508,,,
+requests_utils.py,iter_slices,scalpel,True,8756,353,9109,0.0,0.9786689419795221,
+requests_utils.py,iter_slices,measure_edit,True,8756,347,9103,0.0,0.9786689419795221,
+requests_utils.py,get_unicode_from_response,str_replace,True,9151,8695,17846,,,
+requests_utils.py,get_unicode_from_response,scalpel,True,8927,105,9032,0.0,0.9991349480968859,
+requests_utils.py,get_unicode_from_response,measure_edit,True,8927,105,9032,0.0,0.9991349480968859,
+requests_utils.py,unquote_unreserved,str_replace,True,9037,8695,17732,,,
+requests_utils.py,unquote_unreserved,scalpel,True,8870,114,8984,0.0,0.9991349480968859,
+requests_utils.py,unquote_unreserved,measure_edit,True,8870,112,8982,0.0,0.9991349480968859,
+requests_utils.py,requote_uri,str_replace,True,9089,8695,17784,,,
+requests_utils.py,requote_uri,scalpel,True,8895,103,8998,0.0,0.9991349480968859,
+requests_utils.py,requote_uri,measure_edit,True,8895,101,8996,0.0,0.9991349480968859,
+requests_utils.py,address_in_network,str_replace,True,9045,8695,17740,,,
+requests_utils.py,address_in_network,scalpel,True,8873,133,9006,0.0,0.9991349480968859,
+requests_utils.py,address_in_network,measure_edit,True,8873,127,9000,0.0,0.9991349480968859,
+requests_utils.py,dotted_netmask,str_replace,True,8845,8695,17540,,,
+requests_utils.py,dotted_netmask,scalpel,True,8774,112,8886,0.0,0.9991349480968859,
+requests_utils.py,dotted_netmask,measure_edit,True,8774,110,8884,0.0,0.9991349480968859,
+requests_utils.py,is_ipv4_address,str_replace,True,8763,8695,17458,,,
+requests_utils.py,is_ipv4_address,scalpel,True,8733,90,8823,0.0,0.9991349480968859,
+requests_utils.py,is_ipv4_address,measure_edit,True,8733,88,8821,0.0,0.9991349480968859,
+requests_utils.py,is_valid_cidr,str_replace,True,8909,8695,17604,,,
+requests_utils.py,is_valid_cidr,scalpel,True,8806,99,8905,0.0,0.9991349480968859,
+requests_utils.py,is_valid_cidr,measure_edit,True,8806,95,8901,0.0,0.9991349480968859,
+requests_utils.py,set_environ,str_replace,True,8967,8695,17662,,,
+requests_utils.py,set_environ,scalpel,True,8834,128,8962,0.0,0.9991349480968859,
+requests_utils.py,set_environ,measure_edit,True,8834,126,8960,0.0,0.9991349480968859,
+requests_utils.py,should_bypass_proxies,str_replace,True,9577,8695,18272,,,
+requests_utils.py,should_bypass_proxies,scalpel,True,9141,100,9241,0.0,0.9991349480968859,
+requests_utils.py,should_bypass_proxies,measure_edit,True,9141,98,9239,0.0,0.9991349480968859,
+requests_utils.py,get_environ_proxies,str_replace,True,8783,8695,17478,,,
+requests_utils.py,get_environ_proxies,scalpel,True,8744,103,8847,0.0,0.9991349480968859,
+requests_utils.py,get_environ_proxies,measure_edit,True,8744,101,8845,0.0,0.9991349480968859,
+requests_utils.py,select_proxy,str_replace,True,8993,8695,17688,,,
+requests_utils.py,select_proxy,scalpel,True,8846,112,8958,0.0,0.9991349480968859,
+requests_utils.py,select_proxy,measure_edit,True,8846,112,8958,0.0,0.9991349480968859,
+requests_utils.py,resolve_proxies,str_replace,True,9105,8695,17800,,,
+requests_utils.py,resolve_proxies,scalpel,True,8903,130,9033,0.0,0.9991349480968859,
+requests_utils.py,resolve_proxies,measure_edit,True,8903,128,9031,0.0,0.9991349480968859,
+requests_utils.py,default_user_agent,str_replace,True,8755,8695,17450,,,
+requests_utils.py,default_user_agent,scalpel,True,8728,96,8824,0.0,0.9991349480968859,
+requests_utils.py,default_user_agent,measure_edit,True,8728,94,8822,0.0,0.9991349480968859,
+requests_utils.py,default_headers,str_replace,True,8819,8695,17514,,,
+requests_utils.py,default_headers,scalpel,True,8759,95,8854,0.0,0.9991349480968859,
+requests_utils.py,default_headers,measure_edit,True,8759,91,8850,0.0,0.9991349480968859,
+requests_utils.py,parse_header_links,str_replace,True,9103,8695,17798,,,
+requests_utils.py,parse_header_links,scalpel,True,8902,136,9038,0.0,0.9991349480968859,
+requests_utils.py,parse_header_links,measure_edit,True,8902,132,9034,0.0,0.9991349480968859,
+requests_utils.py,guess_json_utf,str_replace,True,9379,8695,18074,,,
+requests_utils.py,guess_json_utf,scalpel,True,9040,94,9134,0.0,0.9991349480968859,
+requests_utils.py,guess_json_utf,measure_edit,True,9040,90,9130,0.0,0.9991349480968859,
+requests_utils.py,prepend_scheme_if_needed,str_replace,True,9189,8695,17884,,,
+requests_utils.py,prepend_scheme_if_needed,scalpel,True,8946,119,9065,0.0,0.9991349480968859,
+requests_utils.py,prepend_scheme_if_needed,measure_edit,True,8946,119,9065,0.0,0.9991349480968859,
+requests_utils.py,get_auth_from_url,str_replace,True,8873,8695,17568,,,
+requests_utils.py,get_auth_from_url,scalpel,True,8788,105,8893,0.0,0.9991349480968859,
+requests_utils.py,get_auth_from_url,measure_edit,True,8788,103,8891,0.0,0.9991349480968859,
+requests_utils.py,check_header_validity,str_replace,True,8833,8695,17528,,,
+requests_utils.py,check_header_validity,scalpel,True,8768,110,8878,0.0,0.9991349480968859,
+requests_utils.py,check_header_validity,measure_edit,True,8768,108,8876,0.0,0.9991349480968859,
+requests_utils.py,_validate_header_part,str_replace,True,9057,8695,17752,,,
+requests_utils.py,_validate_header_part,scalpel,True,8879,130,9009,0.0,0.9991349480968859,
+requests_utils.py,_validate_header_part,measure_edit,True,8879,126,9005,0.0,0.9991349480968859,
+requests_utils.py,urldefragauth,str_replace,True,8895,8695,17590,,,
+requests_utils.py,urldefragauth,scalpel,True,8799,100,8899,0.0,0.9991349480968859,
+requests_utils.py,urldefragauth,measure_edit,True,8799,94,8893,0.0,0.9991349480968859,
+requests_utils.py,rewind_body,str_replace,True,8981,8695,17676,,,
+requests_utils.py,rewind_body,scalpel,True,8841,106,8947,0.0,0.9991349480968859,
+requests_utils.py,rewind_body,measure_edit,True,8841,104,8945,0.0,0.9991349480968859,
+flask_helpers.py,get_debug_flag,str_replace,True,5832,5696,11528,,,
+flask_helpers.py,get_debug_flag,scalpel,True,5767,115,5882,0.0,0.9985358711566618,
+flask_helpers.py,get_debug_flag,measure_edit,True,5767,113,5880,0.0,0.9985358711566618,
+flask_helpers.py,get_load_dotenv,str_replace,True,5882,5696,11578,,,
+flask_helpers.py,get_load_dotenv,scalpel,True,5793,119,5912,0.0,0.9985358711566618,
+flask_helpers.py,get_load_dotenv,measure_edit,True,5793,119,5912,0.0,0.9985358711566618,
+flask_helpers.py,stream_with_context,str_replace,True,6902,5696,12598,,,
+flask_helpers.py,stream_with_context,scalpel,True,6302,1658,7960,0.0,0.7873090481786134,
+flask_helpers.py,stream_with_context,measure_edit,True,6302,1660,7962,0.0,0.7873090481786134,
+flask_helpers.py,make_response,str_replace,True,6502,5696,12198,,,
+flask_helpers.py,make_response,scalpel,True,6101,132,6233,0.0,0.9985358711566618,
+flask_helpers.py,make_response,measure_edit,True,6101,128,6229,0.0,0.9985358711566618,
+flask_helpers.py,url_for,str_replace,True,6472,5696,12168,,,
+flask_helpers.py,url_for,scalpel,True,6086,119,6205,0.0,0.9985358711566618,
+flask_helpers.py,url_for,measure_edit,True,6086,115,6201,0.0,0.9985358711566618,
+flask_helpers.py,redirect,str_replace,True,6112,5696,11808,,,
+flask_helpers.py,redirect,scalpel,True,5905,125,6030,0.0,0.9985358711566618,
+flask_helpers.py,redirect,measure_edit,True,5905,125,6030,0.0,0.9985358711566618,
+flask_helpers.py,abort,str_replace,True,6072,5696,11768,,,
+flask_helpers.py,abort,scalpel,True,5885,119,6004,0.0,0.9985358711566618,
+flask_helpers.py,abort,measure_edit,True,5885,115,6000,0.0,0.9985358711566618,
+flask_helpers.py,get_template_attribute,str_replace,True,6030,5696,11726,,,
+flask_helpers.py,get_template_attribute,scalpel,True,5866,137,6003,0.0,0.9985358711566618,
+flask_helpers.py,get_template_attribute,measure_edit,True,5866,137,6003,0.0,0.9985358711566618,
+flask_helpers.py,flash,str_replace,True,6266,5696,11962,,,
+flask_helpers.py,flash,scalpel,True,5982,125,6107,0.0,0.9985358711566618,
+flask_helpers.py,flash,measure_edit,True,5982,129,6111,0.0,0.9985358711566618,
+flask_helpers.py,get_flashed_messages,str_replace,True,6414,5696,12110,,,
+flask_helpers.py,get_flashed_messages,scalpel,True,6059,144,6203,0.0,0.9985358711566618,
+flask_helpers.py,get_flashed_messages,measure_edit,True,6059,144,6203,0.0,0.9985358711566618,
+flask_helpers.py,_prepare_send_file_kwargs,str_replace,True,5874,5696,11570,,,
+flask_helpers.py,_prepare_send_file_kwargs,scalpel,True,5789,110,5899,0.0,0.9985358711566618,
+flask_helpers.py,_prepare_send_file_kwargs,measure_edit,True,5789,108,5897,0.0,0.9985358711566618,
+flask_helpers.py,send_file,str_replace,True,7960,5696,13656,,,
+flask_helpers.py,send_file,scalpel,True,6830,138,6968,0.0,0.9985358711566618,
+flask_helpers.py,send_file,measure_edit,True,6830,138,6968,0.0,0.9985358711566618,
+flask_helpers.py,send_from_directory,str_replace,True,6346,5696,12042,,,
+flask_helpers.py,send_from_directory,scalpel,True,6024,112,6136,0.0,0.9985358711566618,
+flask_helpers.py,send_from_directory,measure_edit,True,6024,112,6136,0.0,0.9985358711566618,
+flask_helpers.py,get_root_path,str_replace,True,6598,5696,12294,,,
+flask_helpers.py,get_root_path,scalpel,True,6150,115,6265,0.0,0.9985358711566618,
+flask_helpers.py,get_root_path,measure_edit,True,6150,113,6263,0.0,0.9985358711566618,
+flask_helpers.py,_split_blueprint_path,str_replace,True,5764,5696,11460,,,
+flask_helpers.py,_split_blueprint_path,scalpel,True,5733,102,5835,0.0,0.9985358711566618,
+flask_helpers.py,_split_blueprint_path,measure_edit,True,5733,100,5833,0.0,0.9985358711566618,
+flask_helpers.py,_CollectErrors.__exit__,str_replace,True,5734,5696,11430,,,
+flask_helpers.py,_CollectErrors.__exit__,scalpel,True,5721,104,5825,0.0,0.9985358711566618,
+flask_helpers.py,_CollectErrors.__exit__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+flask_helpers.py,_CollectErrors.raise_any,str_replace,True,5802,5696,11498,,,
+flask_helpers.py,_CollectErrors.raise_any,scalpel,True,5754,111,5865,0.0,0.9985358711566618,
+flask_helpers.py,_CollectErrors.raise_any,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,request_response,str_replace,True,37355,36627,73982,,,
+fastapi_routing.py,request_response,scalpel,True,36993,112,37105,0.0,0.9997982650796853,
+fastapi_routing.py,request_response,measure_edit,True,36993,114,37107,0.0,0.9997982650796853,
+fastapi_routing.py,websocket_session,str_replace,True,36967,36627,73594,,,
+fastapi_routing.py,websocket_session,scalpel,True,36799,108,36907,0.0,0.9997982650796853,
+fastapi_routing.py,websocket_session,measure_edit,True,36799,108,36907,0.0,0.9997982650796853,
+fastapi_routing.py,_wrap_gen_lifespan_context,str_replace,True,36799,36627,73426,,,
+fastapi_routing.py,_wrap_gen_lifespan_context,scalpel,True,36719,120,36839,0.0,0.9997982650796853,
+fastapi_routing.py,_wrap_gen_lifespan_context,measure_edit,True,36719,118,36837,0.0,0.9997982650796853,
+fastapi_routing.py,_merge_lifespan_context,str_replace,True,36871,36627,73498,,,
+fastapi_routing.py,_merge_lifespan_context,scalpel,True,36754,133,36887,0.0,0.9997982243744956,
+fastapi_routing.py,_merge_lifespan_context,measure_edit,True,36754,133,36887,0.0,0.9997982243744956,
+fastapi_routing.py,_extract_endpoint_context,str_replace,True,36945,36627,73572,,,
+fastapi_routing.py,_extract_endpoint_context,scalpel,True,36789,104,36893,0.0,0.9997982650796853,
+fastapi_routing.py,_extract_endpoint_context,measure_edit,True,36789,102,36891,0.0,0.9997982650796853,
+fastapi_routing.py,serialize_response,str_replace,True,36951,36627,73578,,,
+fastapi_routing.py,serialize_response,scalpel,True,36791,115,36906,0.0,0.9997982650796853,
+fastapi_routing.py,serialize_response,measure_edit,True,36791,115,36906,0.0,0.9997982650796853,
+fastapi_routing.py,run_endpoint_function,str_replace,True,36727,36627,73354,,,
+fastapi_routing.py,run_endpoint_function,scalpel,True,36680,156,36836,0.0,0.9997981836528759,
+fastapi_routing.py,run_endpoint_function,measure_edit,True,36680,156,36836,0.0,0.9997981836528759,
+fastapi_routing.py,_build_response_args,str_replace,True,36875,36627,73502,,,
+fastapi_routing.py,_build_response_args,scalpel,True,36754,117,36871,0.0,0.9997982650796853,
+fastapi_routing.py,_build_response_args,measure_edit,True,36754,115,36869,0.0,0.9997982650796853,
+fastapi_routing.py,get_request_handler,str_replace,True,42295,36627,78922,,,
+fastapi_routing.py,get_request_handler,scalpel,True,39464,149,39613,0.0,0.9997982650796853,
+fastapi_routing.py,get_request_handler,measure_edit,True,39464,147,39611,0.0,0.9997982650796853,
+fastapi_routing.py,get_websocket_app,str_replace,True,37113,36627,73740,,,
+fastapi_routing.py,get_websocket_app,scalpel,True,36874,128,37002,0.0,0.9997982650796853,
+fastapi_routing.py,get_websocket_app,measure_edit,True,36874,126,37000,0.0,0.9997982650796853,
+fastapi_routing.py,APIWebSocketRoute.__init__,str_replace,True,37031,36627,73658,,,
+fastapi_routing.py,APIWebSocketRoute.__init__,scalpel,True,36835,126,36961,0.0,0.9997982650796853,
+fastapi_routing.py,APIWebSocketRoute.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIWebSocketRoute.matches,str_replace,True,36695,36627,73322,,,
+fastapi_routing.py,APIWebSocketRoute.matches,scalpel,True,36667,114,36781,0.0,0.9997982650796853,
+fastapi_routing.py,APIWebSocketRoute.matches,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRoute.__init__,str_replace,True,39071,36627,75698,,,
+fastapi_routing.py,APIRoute.__init__,scalpel,True,37854,119,37973,0.0,0.9997982650796853,
+fastapi_routing.py,APIRoute.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRoute.get_route_handler,str_replace,True,36935,36627,73562,,,
+fastapi_routing.py,APIRoute.get_route_handler,scalpel,True,36786,115,36901,0.0,0.9997982650796853,
+fastapi_routing.py,APIRoute.get_route_handler,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRoute.matches,str_replace,True,36695,36627,73322,,,
+fastapi_routing.py,APIRoute.matches,scalpel,True,36666,110,36776,0.0,0.9997982650796853,
+fastapi_routing.py,APIRoute.matches,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.__init__,str_replace,True,37433,36627,74060,,,
+fastapi_routing.py,APIRouter.__init__,scalpel,True,37035,132,37167,0.0,0.9997982243744956,
+fastapi_routing.py,APIRouter.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.route,str_replace,True,36733,36627,73360,,,
+fastapi_routing.py,APIRouter.route,scalpel,True,36685,123,36808,0.0,0.9997982650796853,
+fastapi_routing.py,APIRouter.route,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.add_api_route,str_replace,True,37345,36627,73972,,,
+fastapi_routing.py,APIRouter.add_api_route,scalpel,True,36991,129,37120,0.0,0.9997982650796853,
+fastapi_routing.py,APIRouter.add_api_route,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.api_route,str_replace,True,37017,36627,73644,,,
+fastapi_routing.py,APIRouter.api_route,scalpel,True,36826,113,36939,0.0,0.9997982650796853,
+fastapi_routing.py,APIRouter.api_route,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.add_api_websocket_route,str_replace,True,36759,36627,73386,,,
+fastapi_routing.py,APIRouter.add_api_websocket_route,scalpel,True,36700,112,36812,0.0,0.9997982650796853,
+fastapi_routing.py,APIRouter.add_api_websocket_route,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.websocket,str_replace,True,36987,36627,73614,,,
+fastapi_routing.py,APIRouter.websocket,scalpel,True,36810,431,37241,0.0,0.9945531571515029,
+fastapi_routing.py,APIRouter.websocket,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.websocket_route,str_replace,True,36697,36627,73324,,,
+fastapi_routing.py,APIRouter.websocket_route,scalpel,True,36666,132,36798,0.0,0.9997982650796853,
+fastapi_routing.py,APIRouter.websocket_route,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.include_router,str_replace,True,38581,36627,75208,,,
+fastapi_routing.py,APIRouter.include_router,scalpel,True,37608,436,38044,0.0,0.995158361912447,
+fastapi_routing.py,APIRouter.include_router,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.get,str_replace,True,37141,36627,73768,,,
+fastapi_routing.py,APIRouter.get,scalpel,True,36887,310,37197,0.0,0.9961670365140206,
+fastapi_routing.py,APIRouter.get,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.put,str_replace,True,37213,36627,73840,,,
+fastapi_routing.py,APIRouter.put,scalpel,True,36923,394,37317,0.0,0.995158361912447,
+fastapi_routing.py,APIRouter.put,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.post,str_replace,True,37185,36627,73812,,,
+fastapi_routing.py,APIRouter.post,scalpel,True,36909,366,37275,0.0,0.995158361912447,
+fastapi_routing.py,APIRouter.post,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.delete,str_replace,True,37137,36627,73764,,,
+fastapi_routing.py,APIRouter.delete,scalpel,True,36885,308,37193,0.0,0.9961670365140206,
+fastapi_routing.py,APIRouter.delete,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.options,str_replace,True,37139,36627,73766,,,
+fastapi_routing.py,APIRouter.options,scalpel,True,36888,310,37198,0.0,0.9961670365140206,
+fastapi_routing.py,APIRouter.options,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.head,str_replace,True,37215,36627,73842,,,
+fastapi_routing.py,APIRouter.head,scalpel,True,36924,398,37322,0.0,0.995158361912447,
+fastapi_routing.py,APIRouter.head,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.patch,str_replace,True,37189,36627,73816,,,
+fastapi_routing.py,APIRouter.patch,scalpel,True,36911,372,37283,0.0,0.995158361912447,
+fastapi_routing.py,APIRouter.patch,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.trace,str_replace,True,37183,36627,73810,,,
+fastapi_routing.py,APIRouter.trace,scalpel,True,36908,364,37272,0.0,0.995158361912447,
+fastapi_routing.py,APIRouter.trace,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter._startup,str_replace,True,36787,36627,73414,,,
+fastapi_routing.py,APIRouter._startup,scalpel,True,36710,241,36951,0.0,0.9981843857171676,
+fastapi_routing.py,APIRouter._startup,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter._shutdown,str_replace,True,36787,36627,73414,,,
+fastapi_routing.py,APIRouter._shutdown,scalpel,True,36710,239,36949,0.0,0.9981843857171676,
+fastapi_routing.py,APIRouter._shutdown,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.add_event_handler,str_replace,True,36811,36627,73438,,,
+fastapi_routing.py,APIRouter.add_event_handler,scalpel,True,36724,239,36963,0.0,0.9981843857171676,
+fastapi_routing.py,APIRouter.add_event_handler,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+fastapi_routing.py,APIRouter.on_event,str_replace,True,36825,36627,73452,,,
+fastapi_routing.py,APIRouter.on_event,scalpel,True,36730,258,36988,0.0,0.9981843857171676,
+fastapi_routing.py,APIRouter.on_event,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,capfirst,str_replace,True,3700,3606,7306,,,
+django_text.py,capfirst,scalpel,True,3655,97,3752,0.0,0.99800796812749,
+django_text.py,capfirst,measure_edit,True,3655,95,3750,0.0,0.99800796812749,
+django_text.py,wrap,str_replace,True,3994,3606,7600,,,
+django_text.py,wrap,scalpel,True,3801,106,3907,0.0,0.99800796812749,
+django_text.py,wrap,measure_edit,True,3801,102,3903,0.0,0.99800796812749,
+django_text.py,add_truncation_text,str_replace,True,3856,3606,7462,,,
+django_text.py,add_truncation_text,scalpel,True,3736,106,3842,0.0,0.99800796812749,
+django_text.py,add_truncation_text,measure_edit,True,3736,106,3842,0.0,0.99800796812749,
+django_text.py,calculate_truncate_chars_length,str_replace,True,3710,3606,7316,,,
+django_text.py,calculate_truncate_chars_length,scalpel,True,3663,104,3767,0.0,0.99800796812749,
+django_text.py,calculate_truncate_chars_length,measure_edit,True,3663,104,3767,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.__init__,str_replace,True,3680,3606,7286,,,
+django_text.py,TruncateHTMLParser.__init__,scalpel,True,3650,110,3760,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateHTMLParser.handle_startendtag,str_replace,True,3658,3606,7264,,,
+django_text.py,TruncateHTMLParser.handle_startendtag,scalpel,True,3640,109,3749,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.handle_startendtag,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateHTMLParser.handle_starttag,str_replace,True,3660,3606,7266,,,
+django_text.py,TruncateHTMLParser.handle_starttag,scalpel,True,3640,112,3752,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.handle_starttag,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateHTMLParser.handle_endtag,str_replace,True,3776,3606,7382,,,
+django_text.py,TruncateHTMLParser.handle_endtag,scalpel,True,3698,120,3818,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.handle_endtag,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateHTMLParser.handle_data,str_replace,True,3740,3606,7346,,,
+django_text.py,TruncateHTMLParser.handle_data,scalpel,True,3679,103,3782,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.handle_data,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateHTMLParser.feed,str_replace,True,3720,3606,7326,,,
+django_text.py,TruncateHTMLParser.feed,scalpel,True,3668,95,3763,0.0,0.99800796812749,
+django_text.py,TruncateHTMLParser.feed,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateCharsHTMLParser.__init__,str_replace,True,3702,3606,7308,,,
+django_text.py,TruncateCharsHTMLParser.__init__,scalpel,True,3662,116,3778,0.0,0.99800796812749,
+django_text.py,TruncateCharsHTMLParser.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateCharsHTMLParser.process,str_replace,True,3760,3606,7366,,,
+django_text.py,TruncateCharsHTMLParser.process,scalpel,True,3689,119,3808,0.0,0.99800796812749,
+django_text.py,TruncateCharsHTMLParser.process,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,TruncateWordsHTMLParser.process,str_replace,True,3682,3606,7288,,,
+django_text.py,TruncateWordsHTMLParser.process,scalpel,True,3650,124,3774,0.0,0.99800796812749,
+django_text.py,TruncateWordsHTMLParser.process,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,Truncator.chars,str_replace,True,3880,3606,7486,,,
+django_text.py,Truncator.chars,scalpel,True,3747,228,3975,0.0,0.9840637450199203,
+django_text.py,Truncator.chars,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,Truncator._text_chars,str_replace,True,3910,3606,7516,,,
+django_text.py,Truncator._text_chars,scalpel,True,3763,127,3890,0.0,0.99800796812749,
+django_text.py,Truncator._text_chars,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,Truncator.words,str_replace,True,3826,3606,7432,,,
+django_text.py,Truncator.words,scalpel,True,3720,189,3909,0.0,0.9880478087649402,
+django_text.py,Truncator.words,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,Truncator._text_words,str_replace,True,3742,3606,7348,,,
+django_text.py,Truncator._text_words,scalpel,True,3679,169,3848,0.0,0.9880478087649402,
+django_text.py,Truncator._text_words,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,get_valid_filename,str_replace,True,3898,3606,7504,,,
+django_text.py,get_valid_filename,scalpel,True,3755,113,3868,0.0,0.99800796812749,
+django_text.py,get_valid_filename,measure_edit,True,3755,109,3864,0.0,0.99800796812749,
+django_text.py,get_text_list,str_replace,True,3964,3606,7570,,,
+django_text.py,get_text_list,scalpel,True,3788,118,3906,0.0,0.99800796812749,
+django_text.py,get_text_list,measure_edit,True,3788,114,3902,0.0,0.99800796812749,
+django_text.py,phone2numeric,str_replace,True,4048,3606,7654,,,
+django_text.py,phone2numeric,scalpel,True,3830,104,3934,0.0,0.99800796812749,
+django_text.py,phone2numeric,measure_edit,True,3830,102,3932,0.0,0.99800796812749,
+django_text.py,compress_string,str_replace,True,3786,3606,7392,,,
+django_text.py,compress_string,scalpel,True,3698,102,3800,0.0,0.99800796812749,
+django_text.py,compress_string,measure_edit,True,3698,102,3800,0.0,0.99800796812749,
+django_text.py,StreamingBuffer.read,str_replace,True,3648,3606,7254,,,
+django_text.py,StreamingBuffer.read,scalpel,True,3630,97,3727,0.0,0.99800796812749,
+django_text.py,StreamingBuffer.read,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+django_text.py,compress_sequence,str_replace,True,3818,3606,7424,,,
+django_text.py,compress_sequence,scalpel,True,3714,119,3833,0.0,0.99800796812749,
+django_text.py,compress_sequence,measure_edit,True,3714,117,3831,0.0,0.99800796812749,
+django_text.py,acompress_sequence,str_replace,True,3820,3606,7426,,,
+django_text.py,acompress_sequence,scalpel,True,3716,110,3826,0.0,0.99800796812749,
+django_text.py,acompress_sequence,measure_edit,True,3716,108,3824,0.0,0.99800796812749,
+django_text.py,smart_split,str_replace,True,3992,3606,7598,,,
+django_text.py,smart_split,scalpel,True,3801,103,3904,0.0,0.99800796812749,
+django_text.py,smart_split,measure_edit,True,3801,101,3902,0.0,0.99800796812749,
+django_text.py,unescape_string_literal,str_replace,True,3924,3606,7530,,,
+django_text.py,unescape_string_literal,scalpel,True,3769,100,3869,0.0,0.99800796812749,
+django_text.py,unescape_string_literal,measure_edit,True,3769,100,3869,0.0,0.99800796812749,
+django_text.py,slugify,str_replace,True,3922,3606,7528,,,
+django_text.py,slugify,scalpel,True,3766,114,3880,0.0,0.99800796812749,
+django_text.py,slugify,measure_edit,True,3766,114,3880,0.0,0.99800796812749,
+django_text.py,camel_case_to_spaces,str_replace,True,3676,3606,7282,,,
+django_text.py,camel_case_to_spaces,scalpel,True,3645,95,3740,0.0,0.99800796812749,
+django_text.py,camel_case_to_spaces,measure_edit,True,3645,89,3734,0.0,0.99800796812749,
+django_text.py,_format_lazy,str_replace,True,3684,3606,7290,,,
+django_text.py,_format_lazy,scalpel,True,3647,108,3755,0.0,0.99800796812749,
+django_text.py,_format_lazy,measure_edit,True,3647,104,3751,0.0,0.99800796812749,
+httpx_auth.py,Auth.auth_flow,str_replace,True,2894,2674,5568,,,
+httpx_auth.py,Auth.auth_flow,scalpel,True,2787,354,3141,0.0,0.9369627507163324,
+httpx_auth.py,Auth.auth_flow,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,Auth.sync_auth_flow,str_replace,True,2892,2674,5566,,,
+httpx_auth.py,Auth.sync_auth_flow,scalpel,True,2787,208,2995,0.0,0.9799426934097422,
+httpx_auth.py,Auth.sync_auth_flow,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,Auth.async_auth_flow,str_replace,True,2898,2674,5572,,,
+httpx_auth.py,Auth.async_auth_flow,scalpel,True,2790,205,2995,0.0,0.9799426934097422,
+httpx_auth.py,Auth.async_auth_flow,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,BasicAuth._build_auth_header,str_replace,True,2746,2674,5420,,,
+httpx_auth.py,BasicAuth._build_auth_header,scalpel,True,2715,129,2844,0.0,0.997134670487106,
+httpx_auth.py,BasicAuth._build_auth_header,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,NetRCAuth.auth_flow,str_replace,True,2874,2674,5548,,,
+httpx_auth.py,NetRCAuth.auth_flow,scalpel,True,2780,147,2927,0.0,0.997134670487106,
+httpx_auth.py,NetRCAuth.auth_flow,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,NetRCAuth._build_auth_header,str_replace,True,2746,2674,5420,,,
+httpx_auth.py,NetRCAuth._build_auth_header,scalpel,True,2717,129,2846,0.0,0.997134670487106,
+httpx_auth.py,NetRCAuth._build_auth_header,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth.__init__,str_replace,True,2758,2674,5432,,,
+httpx_auth.py,DigestAuth.__init__,scalpel,True,2721,124,2845,0.0,0.997134670487106,
+httpx_auth.py,DigestAuth.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth.auth_flow,str_replace,True,3108,2674,5782,,,
+httpx_auth.py,DigestAuth.auth_flow,scalpel,True,2895,122,3017,0.0,0.997134670487106,
+httpx_auth.py,DigestAuth.auth_flow,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth._parse_challenge,str_replace,True,3212,2674,5886,,,
+httpx_auth.py,DigestAuth._parse_challenge,scalpel,True,2947,232,3179,0.0,0.9828080229226361,
+httpx_auth.py,DigestAuth._parse_challenge,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth._build_auth_header,str_replace,True,3448,2674,6122,,,
+httpx_auth.py,DigestAuth._build_auth_header,scalpel,True,3066,121,3187,0.0,0.997134670487106,
+httpx_auth.py,DigestAuth._build_auth_header,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth._get_client_nonce,str_replace,True,2768,2674,5442,,,
+httpx_auth.py,DigestAuth._get_client_nonce,scalpel,True,2726,125,2851,0.0,0.997134670487106,
+httpx_auth.py,DigestAuth._get_client_nonce,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth._get_header_value,str_replace,True,2910,2674,5584,,,
+httpx_auth.py,DigestAuth._get_header_value,scalpel,True,2797,137,2934,0.0,0.997134670487106,
+httpx_auth.py,DigestAuth._get_header_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+httpx_auth.py,DigestAuth._resolve_qop,str_replace,True,2856,2674,5530,,,
+httpx_auth.py,DigestAuth._resolve_qop,scalpel,True,2770,120,2890,0.0,0.997134670487106,
+httpx_auth.py,DigestAuth._resolve_qop,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,_check_frozen,str_replace,True,18767,18593,37360,,,
+pydantic_main.py,_check_frozen,scalpel,True,18683,129,18812,0.0,0.9994562262098967,
+pydantic_main.py,_check_frozen,measure_edit,True,18683,133,18816,0.0,0.9994562262098967,
+pydantic_main.py,_private_setattr_handler,str_replace,True,18883,18593,37476,,,
+pydantic_main.py,_private_setattr_handler,scalpel,True,18742,150,18892,0.0,0.9994562262098967,
+pydantic_main.py,_private_setattr_handler,measure_edit,True,18742,152,18894,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__init__,str_replace,True,19015,18593,37608,,,
+pydantic_main.py,BaseModel.__init__,scalpel,True,18809,286,19095,0.0,0.9956498096791735,
+pydantic_main.py,BaseModel.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_fields,str_replace,True,18749,18593,37342,,,
+pydantic_main.py,BaseModel.model_fields,scalpel,True,18675,231,18906,0.0,0.9961935834692768,
+pydantic_main.py,BaseModel.model_fields,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_computed_fields,str_replace,True,18761,18593,37354,,,
+pydantic_main.py,BaseModel.model_computed_fields,scalpel,True,18683,233,18916,0.0,0.9961935834692768,
+pydantic_main.py,BaseModel.model_computed_fields,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_extra,str_replace,True,18687,18593,37280,,,
+pydantic_main.py,BaseModel.model_extra,scalpel,True,18644,172,18816,0.0,0.9967373572593801,
+pydantic_main.py,BaseModel.model_extra,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_fields_set,str_replace,True,18705,18593,37298,,,
+pydantic_main.py,BaseModel.model_fields_set,scalpel,True,18654,183,18837,0.0,0.9961935834692768,
+pydantic_main.py,BaseModel.model_fields_set,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_construct,str_replace,True,20107,18593,38700,,,
+pydantic_main.py,BaseModel.model_construct,scalpel,True,19354,765,20119,0.0,0.9874932028276238,
+pydantic_main.py,BaseModel.model_construct,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_copy,str_replace,True,19169,18593,37762,,,
+pydantic_main.py,BaseModel.model_copy,scalpel,True,18885,474,19359,0.0,0.989668297988037,
+pydantic_main.py,BaseModel.model_copy,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_dump,str_replace,True,19621,18593,38214,,,
+pydantic_main.py,BaseModel.model_dump,scalpel,True,19111,969,20080,0.0,0.9831430125067971,
+pydantic_main.py,BaseModel.model_dump,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_dump_json,str_replace,True,19655,18593,38248,,,
+pydantic_main.py,BaseModel.model_dump_json,scalpel,True,19129,982,20111,0.0,0.9831430125067971,
+pydantic_main.py,BaseModel.model_dump_json,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_json_schema,str_replace,True,19155,18593,37748,,,
+pydantic_main.py,BaseModel.model_json_schema,scalpel,True,18879,610,19489,0.0,0.9885807504078303,
+pydantic_main.py,BaseModel.model_json_schema,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_parametrized_name,str_replace,True,19095,18593,37688,,,
+pydantic_main.py,BaseModel.model_parametrized_name,scalpel,True,18851,382,19233,0.0,0.991299619358347,
+pydantic_main.py,BaseModel.model_parametrized_name,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_post_init,str_replace,True,18677,18593,37270,,,
+pydantic_main.py,BaseModel.model_post_init,scalpel,True,18640,174,18814,0.0,0.9978249048395867,
+pydantic_main.py,BaseModel.model_post_init,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_rebuild,str_replace,True,19627,18593,38220,,,
+pydantic_main.py,BaseModel.model_rebuild,scalpel,True,19115,461,19576,0.0,0.991299619358347,
+pydantic_main.py,BaseModel.model_rebuild,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_validate,str_replace,True,19177,18593,37770,,,
+pydantic_main.py,BaseModel.model_validate,scalpel,True,18889,452,19341,0.0,0.989668297988037,
+pydantic_main.py,BaseModel.model_validate,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_validate_json,str_replace,True,19211,18593,37804,,,
+pydantic_main.py,BaseModel.model_validate_json,scalpel,True,18907,513,19420,0.0,0.9885807504078303,
+pydantic_main.py,BaseModel.model_validate_json,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.model_validate_strings,str_replace,True,19123,18593,37716,,,
+pydantic_main.py,BaseModel.model_validate_strings,scalpel,True,18863,406,19269,0.0,0.9918433931484503,
+pydantic_main.py,BaseModel.model_validate_strings,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__get_pydantic_core_schema__,str_replace,True,18923,18593,37516,,,
+pydantic_main.py,BaseModel.__get_pydantic_core_schema__,scalpel,True,18768,229,18997,0.0,0.9994553376906318,
+pydantic_main.py,BaseModel.__get_pydantic_core_schema__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__get_pydantic_json_schema__,str_replace,True,18941,18593,37534,,,
+pydantic_main.py,BaseModel.__get_pydantic_json_schema__,scalpel,True,18777,451,19228,0.0,0.9902120717781403,
+pydantic_main.py,BaseModel.__get_pydantic_json_schema__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__pydantic_init_subclass__,str_replace,True,19127,18593,37720,,,
+pydantic_main.py,BaseModel.__pydantic_init_subclass__,scalpel,True,18870,655,19525,0.0,0.9885807504078303,
+pydantic_main.py,BaseModel.__pydantic_init_subclass__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__pydantic_on_complete__,str_replace,True,18833,18593,37426,,,
+pydantic_main.py,BaseModel.__pydantic_on_complete__,scalpel,True,18722,345,19067,0.0,0.9951060358890701,
+pydantic_main.py,BaseModel.__pydantic_on_complete__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__class_getitem__,str_replace,True,19999,18593,38592,,,
+pydantic_main.py,BaseModel.__class_getitem__,scalpel,True,19303,137,19440,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__class_getitem__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__copy__,str_replace,True,18949,18593,37542,,,
+pydantic_main.py,BaseModel.__copy__,scalpel,True,18776,104,18880,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__copy__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__deepcopy__,str_replace,True,19045,18593,37638,,,
+pydantic_main.py,BaseModel.__deepcopy__,scalpel,True,18825,118,18943,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__deepcopy__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__getstate__,str_replace,True,18781,18593,37374,,,
+pydantic_main.py,BaseModel.__getstate__,scalpel,True,18693,132,18825,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__getstate__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__setstate__,str_replace,True,18769,18593,37362,,,
+pydantic_main.py,BaseModel.__setstate__,scalpel,True,18687,160,18847,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__setstate__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__iter__,str_replace,True,18705,18593,37298,,,
+pydantic_main.py,BaseModel.__iter__,scalpel,True,18654,128,18782,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__iter__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__repr_args__,str_replace,True,19103,18593,37696,,,
+pydantic_main.py,BaseModel.__repr_args__,scalpel,True,18854,230,19084,0.0,0.9994553376906318,
+pydantic_main.py,BaseModel.__repr_args__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__fields__,str_replace,True,18707,18593,37300,,,
+pydantic_main.py,BaseModel.__fields__,scalpel,True,18655,145,18800,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__fields__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.__fields_set__,str_replace,True,18699,18593,37292,,,
+pydantic_main.py,BaseModel.__fields_set__,scalpel,True,18652,121,18773,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.__fields_set__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.dict,str_replace,True,18763,18593,37356,,,
+pydantic_main.py,BaseModel.dict,scalpel,True,18681,149,18830,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.dict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.json,str_replace,True,18935,18593,37528,,,
+pydantic_main.py,BaseModel.json,scalpel,True,18767,131,18898,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.json,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.parse_obj,str_replace,True,18687,18593,37280,,,
+pydantic_main.py,BaseModel.parse_obj,scalpel,True,18644,166,18810,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.parse_obj,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.parse_raw,str_replace,True,19237,18593,37830,,,
+pydantic_main.py,BaseModel.parse_raw,scalpel,True,18919,154,19073,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.parse_raw,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.parse_file,str_replace,True,18815,18593,37408,,,
+pydantic_main.py,BaseModel.parse_file,scalpel,True,18708,137,18845,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel.parse_file,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.from_orm,str_replace,True,18805,18593,37398,,,
+pydantic_main.py,BaseModel.from_orm,scalpel,True,18705,165,18870,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.from_orm,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.construct,str_replace,True,18701,18593,37294,,,
+pydantic_main.py,BaseModel.construct,scalpel,True,18650,188,18838,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.construct,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.copy,str_replace,True,19773,18593,38366,,,
+pydantic_main.py,BaseModel.copy,scalpel,True,19186,598,19784,0.0,0.9869494290375204,
+pydantic_main.py,BaseModel.copy,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.schema,str_replace,True,18709,18593,37302,,,
+pydantic_main.py,BaseModel.schema,scalpel,True,18654,180,18834,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.schema,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.schema_json,str_replace,True,18787,18593,37380,,,
+pydantic_main.py,BaseModel.schema_json,scalpel,True,18694,166,18860,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.schema_json,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.validate,str_replace,True,18685,18593,37278,,,
+pydantic_main.py,BaseModel.validate,scalpel,True,18642,160,18802,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.validate,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel.update_forward_refs,str_replace,True,18745,18593,37338,,,
+pydantic_main.py,BaseModel.update_forward_refs,scalpel,True,18674,169,18843,0.0,0.9989124524197933,
+pydantic_main.py,BaseModel.update_forward_refs,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel._iter,str_replace,True,18721,18593,37314,,,
+pydantic_main.py,BaseModel._iter,scalpel,True,18660,140,18800,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel._iter,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel._copy_and_set_values,str_replace,True,18733,18593,37326,,,
+pydantic_main.py,BaseModel._copy_and_set_values,scalpel,True,18669,133,18802,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel._copy_and_set_values,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel._get_value,str_replace,True,18725,18593,37318,,,
+pydantic_main.py,BaseModel._get_value,scalpel,True,18663,129,18792,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel._get_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,BaseModel._calculate_keys,str_replace,True,18725,18593,37318,,,
+pydantic_main.py,BaseModel._calculate_keys,scalpel,True,18664,127,18791,0.0,0.9994562262098967,
+pydantic_main.py,BaseModel._calculate_keys,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+pydantic_main.py,create_model,str_replace,True,20303,18593,38896,,,
+pydantic_main.py,create_model,scalpel,True,19450,2690,22140,0.0,0.8516129032258064,
+pydantic_main.py,create_model,measure_edit,True,19450,2692,22142,0.0,0.8516129032258064,
+rich_progress.py,_TrackThread.__init__,str_replace,True,13253,13167,26420,,,
+rich_progress.py,_TrackThread.__init__,scalpel,True,13216,122,13338,0.0,0.9994175888177053,
+rich_progress.py,_TrackThread.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_TrackThread.run,str_replace,True,13357,13167,26524,,,
+rich_progress.py,_TrackThread.run,scalpel,True,13266,106,13372,0.0,0.9994175888177053,
+rich_progress.py,_TrackThread.run,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,track,str_replace,True,14235,13167,27402,,,
+rich_progress.py,track,scalpel,True,13702,120,13822,0.0,0.9994175888177053,
+rich_progress.py,track,measure_edit,True,13702,118,13820,0.0,0.9994175888177053,
+rich_progress.py,_Reader.__init__,str_replace,True,13233,13167,26400,,,
+rich_progress.py,_Reader.__init__,scalpel,True,13205,101,13306,0.0,0.9994175888177053,
+rich_progress.py,_Reader.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.__next__,str_replace,True,13211,13167,26378,,,
+rich_progress.py,_Reader.__next__,scalpel,True,13194,102,13296,0.0,0.9994175888177053,
+rich_progress.py,_Reader.__next__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.read,str_replace,True,13213,13167,26380,,,
+rich_progress.py,_Reader.read,scalpel,True,13193,110,13303,0.0,0.9994175888177053,
+rich_progress.py,_Reader.read,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.readinto,str_replace,True,13229,13167,26396,,,
+rich_progress.py,_Reader.readinto,scalpel,True,13202,161,13363,0.0,0.9988351776354106,
+rich_progress.py,_Reader.readinto,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.readline,str_replace,True,13213,13167,26380,,,
+rich_progress.py,_Reader.readline,scalpel,True,13194,143,13337,0.0,0.9988351776354106,
+rich_progress.py,_Reader.readline,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.readlines,str_replace,True,13221,13167,26388,,,
+rich_progress.py,_Reader.readlines,scalpel,True,13198,113,13311,0.0,0.9994175888177053,
+rich_progress.py,_Reader.readlines,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.close,str_replace,True,13203,13167,26370,,,
+rich_progress.py,_Reader.close,scalpel,True,13188,98,13286,0.0,0.9994175888177053,
+rich_progress.py,_Reader.close,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,_Reader.seek,str_replace,True,13215,13167,26382,,,
+rich_progress.py,_Reader.seek,scalpel,True,13194,118,13312,0.0,0.9994175888177053,
+rich_progress.py,_Reader.seek,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,wrap_file,str_replace,True,14031,13167,27198,,,
+rich_progress.py,wrap_file,scalpel,True,13601,108,13709,0.0,0.9994175888177053,
+rich_progress.py,wrap_file,measure_edit,True,13601,106,13707,0.0,0.9994175888177053,
+rich_progress.py,open,str_replace,True,14429,13167,27596,,,
+rich_progress.py,open,scalpel,True,13799,1606,15405,0.0,0.9045035268583831,
+rich_progress.py,open,measure_edit,True,13799,1606,15405,0.0,0.9045035268583831,
+rich_progress.py,ProgressColumn.__init__,str_replace,True,13251,13167,26418,,,
+rich_progress.py,ProgressColumn.__init__,scalpel,True,13214,140,13354,0.0,0.9994175888177053,
+rich_progress.py,ProgressColumn.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,ProgressColumn.__call__,str_replace,True,13459,13167,26626,,,
+rich_progress.py,ProgressColumn.__call__,scalpel,True,13318,213,13531,0.0,0.9947582993593477,
+rich_progress.py,ProgressColumn.__call__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,SpinnerColumn.__init__,str_replace,True,13283,13167,26450,,,
+rich_progress.py,SpinnerColumn.__init__,scalpel,True,13230,121,13351,0.0,0.9994175888177053,
+rich_progress.py,SpinnerColumn.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,SpinnerColumn.set_spinner,str_replace,True,13337,13167,26504,,,
+rich_progress.py,SpinnerColumn.set_spinner,scalpel,True,13256,269,13525,0.0,0.9953407105416424,
+rich_progress.py,SpinnerColumn.set_spinner,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,SpinnerColumn.render,str_replace,True,13225,13167,26392,,,
+rich_progress.py,SpinnerColumn.render,scalpel,True,13199,114,13313,0.0,0.9994175888177053,
+rich_progress.py,SpinnerColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TextColumn.__init__,str_replace,True,13279,13167,26446,,,
+rich_progress.py,TextColumn.__init__,scalpel,True,13228,117,13345,0.0,0.9994175888177053,
+rich_progress.py,TextColumn.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TextColumn.render,str_replace,True,13311,13167,26478,,,
+rich_progress.py,TextColumn.render,scalpel,True,13242,130,13372,0.0,0.9994175888177053,
+rich_progress.py,TextColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,BarColumn.__init__,str_replace,True,13267,13167,26434,,,
+rich_progress.py,BarColumn.__init__,scalpel,True,13222,120,13342,0.0,0.9994175888177053,
+rich_progress.py,BarColumn.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,BarColumn.render,str_replace,True,13375,13167,26542,,,
+rich_progress.py,BarColumn.render,scalpel,True,13274,124,13398,0.0,0.9994175888177053,
+rich_progress.py,BarColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TimeElapsedColumn.render,str_replace,True,13293,13167,26460,,,
+rich_progress.py,TimeElapsedColumn.render,scalpel,True,13234,114,13348,0.0,0.9994175888177053,
+rich_progress.py,TimeElapsedColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TaskProgressColumn.__init__,str_replace,True,13291,13167,26458,,,
+rich_progress.py,TaskProgressColumn.__init__,scalpel,True,13235,115,13350,0.0,0.9994175888177053,
+rich_progress.py,TaskProgressColumn.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TaskProgressColumn.render_speed,str_replace,True,13429,13167,26596,,,
+rich_progress.py,TaskProgressColumn.render_speed,scalpel,True,13303,191,13494,0.0,0.9947582993593477,
+rich_progress.py,TaskProgressColumn.render_speed,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TaskProgressColumn.render,str_replace,True,13401,13167,26568,,,
+rich_progress.py,TaskProgressColumn.render,scalpel,True,13288,128,13416,0.0,0.9994175888177053,
+rich_progress.py,TaskProgressColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TimeRemainingColumn.__init__,str_replace,True,13223,13167,26390,,,
+rich_progress.py,TimeRemainingColumn.__init__,scalpel,True,13201,116,13317,0.0,0.9994175888177053,
+rich_progress.py,TimeRemainingColumn.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TimeRemainingColumn.render,str_replace,True,13559,13167,26726,,,
+rich_progress.py,TimeRemainingColumn.render,scalpel,True,13367,113,13480,0.0,0.9994175888177053,
+rich_progress.py,TimeRemainingColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,FileSizeColumn.render,str_replace,True,13225,13167,26392,,,
+rich_progress.py,FileSizeColumn.render,scalpel,True,13199,118,13317,0.0,0.9994175888177053,
+rich_progress.py,FileSizeColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TotalFileSizeColumn.render,str_replace,True,13243,13167,26410,,,
+rich_progress.py,TotalFileSizeColumn.render,scalpel,True,13209,123,13332,0.0,0.9994175888177053,
+rich_progress.py,TotalFileSizeColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,MofNCompleteColumn.render,str_replace,True,13297,13167,26464,,,
+rich_progress.py,MofNCompleteColumn.render,scalpel,True,13238,121,13359,0.0,0.9994175888177053,
+rich_progress.py,MofNCompleteColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,DownloadColumn.render,str_replace,True,13745,13167,26912,,,
+rich_progress.py,DownloadColumn.render,scalpel,True,13459,111,13570,0.0,0.9994175888177053,
+rich_progress.py,DownloadColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,TransferSpeedColumn.render,str_replace,True,13287,13167,26454,,,
+rich_progress.py,TransferSpeedColumn.render,scalpel,True,13231,110,13341,0.0,0.9994175888177053,
+rich_progress.py,TransferSpeedColumn.render,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Task.remaining,str_replace,True,13247,13167,26414,,,
+rich_progress.py,Task.remaining,scalpel,True,13209,112,13321,0.0,0.9994175888177053,
+rich_progress.py,Task.remaining,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Task.elapsed,str_replace,True,13297,13167,26464,,,
+rich_progress.py,Task.elapsed,scalpel,True,13234,115,13349,0.0,0.9994175888177053,
+rich_progress.py,Task.elapsed,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Task.percentage,str_replace,True,13313,13167,26480,,,
+rich_progress.py,Task.percentage,scalpel,True,13242,117,13359,0.0,0.9994175888177053,
+rich_progress.py,Task.percentage,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Task.speed,str_replace,True,13395,13167,26562,,,
+rich_progress.py,Task.speed,scalpel,True,13283,108,13391,0.0,0.9994175888177053,
+rich_progress.py,Task.speed,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Task.time_remaining,str_replace,True,13317,13167,26484,,,
+rich_progress.py,Task.time_remaining,scalpel,True,13245,114,13359,0.0,0.9994175888177053,
+rich_progress.py,Task.time_remaining,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Task._reset,str_replace,True,13217,13167,26384,,,
+rich_progress.py,Task._reset,scalpel,True,13194,103,13297,0.0,0.9994175888177053,
+rich_progress.py,Task._reset,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.__init__,str_replace,True,13523,13167,26690,,,
+rich_progress.py,Progress.__init__,scalpel,True,13349,125,13474,0.0,0.9994175888177053,
+rich_progress.py,Progress.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.get_default_columns,str_replace,True,13565,13167,26732,,,
+rich_progress.py,Progress.get_default_columns,scalpel,True,13370,471,13841,0.0,0.9866045428072219,
+rich_progress.py,Progress.get_default_columns,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.tasks,str_replace,True,13213,13167,26380,,,
+rich_progress.py,Progress.tasks,scalpel,True,13194,108,13302,0.0,0.9994175888177053,
+rich_progress.py,Progress.tasks,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.task_ids,str_replace,True,13211,13167,26378,,,
+rich_progress.py,Progress.task_ids,scalpel,True,13194,107,13301,0.0,0.9994175888177053,
+rich_progress.py,Progress.task_ids,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.finished,str_replace,True,13247,13167,26414,,,
+rich_progress.py,Progress.finished,scalpel,True,13209,106,13315,0.0,0.9994175888177053,
+rich_progress.py,Progress.finished,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.start,str_replace,True,13209,13167,26376,,,
+rich_progress.py,Progress.start,scalpel,True,13190,109,13299,0.0,0.9994175888177053,
+rich_progress.py,Progress.start,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.stop,str_replace,True,13245,13167,26412,,,
+rich_progress.py,Progress.stop,scalpel,True,13208,103,13311,0.0,0.9994175888177053,
+rich_progress.py,Progress.stop,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.track,str_replace,True,13781,13167,26948,,,
+rich_progress.py,Progress.track,scalpel,True,13478,473,13951,0.0,0.9906814210832848,
+rich_progress.py,Progress.track,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.wrap_file,str_replace,True,13727,13167,26894,,,
+rich_progress.py,Progress.wrap_file,scalpel,True,13450,396,13846,0.0,0.9912638322655795,
+rich_progress.py,Progress.wrap_file,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.open,str_replace,True,14349,13167,27516,,,
+rich_progress.py,Progress.open,scalpel,True,13760,2062,15822,0.0,0.9039609332609875,
+rich_progress.py,Progress.open,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.start_task,str_replace,True,13343,13167,26510,,,
+rich_progress.py,Progress.start_task,scalpel,True,13258,230,13488,0.0,0.9947582993593477,
+rich_progress.py,Progress.start_task,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.stop_task,str_replace,True,13329,13167,26496,,,
+rich_progress.py,Progress.stop_task,scalpel,True,13251,190,13441,0.0,0.9953407105416424,
+rich_progress.py,Progress.stop_task,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.update,str_replace,True,13903,13167,27070,,,
+rich_progress.py,Progress.update,scalpel,True,13537,381,13918,0.0,0.9924286546301689,
+rich_progress.py,Progress.update,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.reset,str_replace,True,13651,13167,26818,,,
+rich_progress.py,Progress.reset,scalpel,True,13411,389,13800,0.0,0.9930110658124636,
+rich_progress.py,Progress.reset,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.advance,str_replace,True,13589,13167,26756,,,
+rich_progress.py,Progress.advance,scalpel,True,13380,199,13579,0.0,0.995923121723937,
+rich_progress.py,Progress.advance,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.refresh,str_replace,True,13219,13167,26386,,,
+rich_progress.py,Progress.refresh,scalpel,True,13195,112,13307,0.0,0.9994175888177053,
+rich_progress.py,Progress.refresh,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.get_renderable,str_replace,True,13221,13167,26388,,,
+rich_progress.py,Progress.get_renderable,scalpel,True,13198,113,13311,0.0,0.9994175888177053,
+rich_progress.py,Progress.get_renderable,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.get_renderables,str_replace,True,13221,13167,26388,,,
+rich_progress.py,Progress.get_renderables,scalpel,True,13198,116,13314,0.0,0.9994175888177053,
+rich_progress.py,Progress.get_renderables,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.make_tasks_table,str_replace,True,13499,13167,26666,,,
+rich_progress.py,Progress.make_tasks_table,scalpel,True,13337,195,13532,0.0,0.9947582993593477,
+rich_progress.py,Progress.make_tasks_table,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.__rich__,str_replace,True,13213,13167,26380,,,
+rich_progress.py,Progress.__rich__,scalpel,True,13194,107,13301,0.0,0.9994175888177053,
+rich_progress.py,Progress.__rich__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.add_task,str_replace,True,13729,13167,26896,,,
+rich_progress.py,Progress.add_task,scalpel,True,13451,452,13903,0.0,0.9906814210832848,
+rich_progress.py,Progress.add_task,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rich_progress.py,Progress.remove_task,str_replace,True,13247,13167,26414,,,
+rich_progress.py,Progress.remove_task,scalpel,True,13210,155,13365,0.0,0.995923121723937,
+rich_progress.py,Progress.remove_task,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.__init__,str_replace,True,17239,17189,34428,,,
+black_linegen.py,LineGenerator.__init__,scalpel,True,17219,108,17327,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.line,str_replace,True,17617,17189,34806,,,
+black_linegen.py,LineGenerator.line,scalpel,True,17406,234,17640,0.0,0.996116504854369,
+black_linegen.py,LineGenerator.line,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_default,str_replace,True,17535,17189,34724,,,
+black_linegen.py,LineGenerator.visit_default,scalpel,True,17366,128,17494,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_default,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_test,str_replace,True,17427,17189,34616,,,
+black_linegen.py,LineGenerator.visit_test,scalpel,True,17312,114,17426,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_test,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_INDENT,str_replace,True,17271,17189,34460,,,
+black_linegen.py,LineGenerator.visit_INDENT,scalpel,True,17235,122,17357,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_INDENT,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_DEDENT,str_replace,True,17427,17189,34616,,,
+black_linegen.py,LineGenerator.visit_DEDENT,scalpel,True,17314,141,17455,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_DEDENT,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_stmt,str_replace,True,17509,17189,34698,,,
+black_linegen.py,LineGenerator.visit_stmt,scalpel,True,17353,331,17684,0.0,0.9941747572815534,
+black_linegen.py,LineGenerator.visit_stmt,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_dictsetmaker,str_replace,True,17493,17189,34682,,,
+black_linegen.py,LineGenerator.visit_dictsetmaker,scalpel,True,17347,125,17472,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_dictsetmaker,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_funcdef,str_replace,True,17529,17189,34718,,,
+black_linegen.py,LineGenerator.visit_funcdef,scalpel,True,17364,102,17466,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_funcdef,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_match_case,str_replace,True,17301,17189,34490,,,
+black_linegen.py,LineGenerator.visit_match_case,scalpel,True,17250,124,17374,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_match_case,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_suite,str_replace,True,17257,17189,34446,,,
+black_linegen.py,LineGenerator.visit_suite,scalpel,True,17227,114,17341,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_suite,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_simple_stmt,str_replace,True,17539,17189,34728,,,
+black_linegen.py,LineGenerator.visit_simple_stmt,scalpel,True,17369,119,17488,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_simple_stmt,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_async_stmt,str_replace,True,17395,17189,34584,,,
+black_linegen.py,LineGenerator.visit_async_stmt,scalpel,True,17297,114,17411,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_async_stmt,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_decorators,str_replace,True,17239,17189,34428,,,
+black_linegen.py,LineGenerator.visit_decorators,scalpel,True,17219,109,17328,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_decorators,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_power,str_replace,True,17539,17189,34728,,,
+black_linegen.py,LineGenerator.visit_power,scalpel,True,17368,113,17481,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_power,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_ENDMARKER,str_replace,True,17249,17189,34438,,,
+black_linegen.py,LineGenerator.visit_ENDMARKER,scalpel,True,17225,120,17345,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_ENDMARKER,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_STANDALONE_COMMENT,str_replace,True,17963,17189,35152,,,
+black_linegen.py,LineGenerator.visit_STANDALONE_COMMENT,scalpel,True,17584,121,17705,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_STANDALONE_COMMENT,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_factor,str_replace,True,17459,17189,34648,,,
+black_linegen.py,LineGenerator.visit_factor,scalpel,True,17328,157,17485,0.0,0.9975728155339806,
+black_linegen.py,LineGenerator.visit_factor,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_tname,str_replace,True,17465,17189,34654,,,
+black_linegen.py,LineGenerator.visit_tname,scalpel,True,17332,294,17626,0.0,0.9946601941747573,
+black_linegen.py,LineGenerator.visit_tname,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_STRING,str_replace,True,18969,17189,36158,,,
+black_linegen.py,LineGenerator.visit_STRING,scalpel,True,18083,119,18202,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_STRING,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_atom,str_replace,True,17433,17189,34622,,,
+black_linegen.py,LineGenerator.visit_atom,scalpel,True,17315,115,17430,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_atom,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_fstring,str_replace,True,17481,17189,34670,,,
+black_linegen.py,LineGenerator.visit_fstring,scalpel,True,17340,170,17510,0.0,0.9995138551288284,
+black_linegen.py,LineGenerator.visit_fstring,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_tstring,str_replace,True,17481,17189,34670,,,
+black_linegen.py,LineGenerator.visit_tstring,scalpel,True,17340,508,17848,0.0,0.9995061728395062,
+black_linegen.py,LineGenerator.visit_tstring,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.visit_comp_for,str_replace,True,17283,17189,34472,,,
+black_linegen.py,LineGenerator.visit_comp_for,scalpel,True,17241,131,17372,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.visit_comp_for,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,LineGenerator.__post_init__,str_replace,True,17927,17189,35116,,,
+black_linegen.py,LineGenerator.__post_init__,scalpel,True,17564,111,17675,0.0,0.9995145631067961,
+black_linegen.py,LineGenerator.__post_init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+black_linegen.py,_hugging_power_ops_line_to_string,str_replace,True,17245,17189,34434,,,
+black_linegen.py,_hugging_power_ops_line_to_string,scalpel,True,17224,110,17334,0.0,0.9995145631067961,
+black_linegen.py,_hugging_power_ops_line_to_string,measure_edit,True,17224,108,17332,0.0,0.9995145631067961,
+black_linegen.py,transform_line,str_replace,True,19267,17189,36456,,,
+black_linegen.py,transform_line,scalpel,True,18230,124,18354,0.0,0.9995145631067961,
+black_linegen.py,transform_line,measure_edit,True,18230,126,18356,0.0,0.9995145631067961,
+black_linegen.py,should_split_funcdef_with_rhs,str_replace,True,17691,17189,34880,,,
+black_linegen.py,should_split_funcdef_with_rhs,scalpel,True,17446,125,17571,0.0,0.9995145631067961,
+black_linegen.py,should_split_funcdef_with_rhs,measure_edit,True,17446,119,17565,0.0,0.9995145631067961,
+black_linegen.py,left_hand_split,str_replace,True,18337,17189,35526,,,
+black_linegen.py,left_hand_split,scalpel,True,17766,125,17891,0.0,0.9995145631067961,
+black_linegen.py,left_hand_split,measure_edit,True,17766,125,17891,0.0,0.9995145631067961,
+black_linegen.py,right_hand_split,str_replace,True,17433,17189,34622,,,
+black_linegen.py,right_hand_split,scalpel,True,17314,122,17436,0.0,0.9995145631067961,
+black_linegen.py,right_hand_split,measure_edit,True,17314,124,17438,0.0,0.9995145631067961,
+black_linegen.py,_first_right_hand_split,str_replace,True,19115,17189,36304,,,
+black_linegen.py,_first_right_hand_split,scalpel,True,18156,124,18280,0.0,0.9995145631067961,
+black_linegen.py,_first_right_hand_split,measure_edit,True,18156,122,18278,0.0,0.9995145631067961,
+black_linegen.py,_maybe_split_omitting_optional_parens,str_replace,True,18209,17189,35398,,,
+black_linegen.py,_maybe_split_omitting_optional_parens,scalpel,True,17709,120,17829,0.0,0.9995145631067961,
+black_linegen.py,_maybe_split_omitting_optional_parens,measure_edit,True,17709,120,17829,0.0,0.9995145631067961,
+black_linegen.py,_prefer_split_rhs_oop_over_rhs,str_replace,True,18475,17189,35664,,,
+black_linegen.py,_prefer_split_rhs_oop_over_rhs,scalpel,True,17840,130,17970,0.0,0.9995145631067961,
+black_linegen.py,_prefer_split_rhs_oop_over_rhs,measure_edit,True,17840,130,17970,0.0,0.9995145631067961,
+black_linegen.py,bracket_split_succeeded_or_raise,str_replace,True,17645,17189,34834,,,
+black_linegen.py,bracket_split_succeeded_or_raise,scalpel,True,17424,117,17541,0.0,0.9995145631067961,
+black_linegen.py,bracket_split_succeeded_or_raise,measure_edit,True,17424,117,17541,0.0,0.9995145631067961,
+black_linegen.py,_ensure_trailing_comma,str_replace,True,17657,17189,34846,,,
+black_linegen.py,_ensure_trailing_comma,scalpel,True,17429,115,17544,0.0,0.9995145631067961,
+black_linegen.py,_ensure_trailing_comma,measure_edit,True,17429,115,17544,0.0,0.9995145631067961,
+black_linegen.py,bracket_split_build_line,str_replace,True,17875,17189,35064,,,
+black_linegen.py,bracket_split_build_line,scalpel,True,17537,117,17654,0.0,0.9995145631067961,
+black_linegen.py,bracket_split_build_line,measure_edit,True,17537,119,17656,0.0,0.9995145631067961,
+black_linegen.py,dont_increase_indentation,str_replace,True,17383,17189,34572,,,
+black_linegen.py,dont_increase_indentation,scalpel,True,17290,108,17398,0.0,0.9995145631067961,
+black_linegen.py,dont_increase_indentation,measure_edit,True,17290,110,17400,0.0,0.9995145631067961,
+black_linegen.py,_get_last_non_comment_leaf,str_replace,True,17283,17189,34472,,,
+black_linegen.py,_get_last_non_comment_leaf,scalpel,True,17241,128,17369,0.0,0.9995145631067961,
+black_linegen.py,_get_last_non_comment_leaf,measure_edit,True,17241,128,17369,0.0,0.9995145631067961,
+black_linegen.py,_can_add_trailing_comma,str_replace,True,17317,17189,34506,,,
+black_linegen.py,_can_add_trailing_comma,scalpel,True,17259,138,17397,0.0,0.9995145631067961,
+black_linegen.py,_can_add_trailing_comma,measure_edit,True,17259,140,17399,0.0,0.9995145631067961,
+black_linegen.py,_safe_add_trailing_comma,str_replace,True,17329,17189,34518,,,
+black_linegen.py,_safe_add_trailing_comma,scalpel,True,17265,109,17374,0.0,0.9995145631067961,
+black_linegen.py,_safe_add_trailing_comma,measure_edit,True,17265,109,17374,0.0,0.9995145631067961,
+black_linegen.py,delimiter_split,str_replace,True,18507,17189,35696,,,
+black_linegen.py,delimiter_split,scalpel,True,17850,123,17973,0.0,0.9995145631067961,
+black_linegen.py,delimiter_split,measure_edit,True,17850,121,17971,0.0,0.9995145631067961,
+black_linegen.py,standalone_comment_split,str_replace,True,17591,17189,34780,,,
+black_linegen.py,standalone_comment_split,scalpel,True,17394,130,17524,0.0,0.9995145631067961,
+black_linegen.py,standalone_comment_split,measure_edit,True,17394,128,17522,0.0,0.9995145631067961,
+black_linegen.py,normalize_invisible_parens,str_replace,True,19535,17189,36724,,,
+black_linegen.py,normalize_invisible_parens,scalpel,True,18368,135,18503,0.0,0.9995145631067961,
+black_linegen.py,normalize_invisible_parens,measure_edit,True,18368,135,18503,0.0,0.9995145631067961,
+black_linegen.py,_normalize_import_from,str_replace,True,17343,17189,34532,,,
+black_linegen.py,_normalize_import_from,scalpel,True,17269,137,17406,0.0,0.999514091350826,
+black_linegen.py,_normalize_import_from,measure_edit,True,17269,135,17404,0.0,0.999514091350826,
+black_linegen.py,remove_await_parens,str_replace,True,17861,17189,35050,,,
+black_linegen.py,remove_await_parens,scalpel,True,17531,131,17662,0.0,0.9995145631067961,
+black_linegen.py,remove_await_parens,measure_edit,True,17531,129,17660,0.0,0.9995145631067961,
+black_linegen.py,_maybe_wrap_cms_in_parens,str_replace,True,17833,17189,35022,,,
+black_linegen.py,_maybe_wrap_cms_in_parens,scalpel,True,17520,137,17657,0.0,0.9995145631067961,
+black_linegen.py,_maybe_wrap_cms_in_parens,measure_edit,True,17520,137,17657,0.0,0.9995145631067961,
+black_linegen.py,remove_with_parens,str_replace,True,18061,17189,35250,,,
+black_linegen.py,remove_with_parens,scalpel,True,17630,144,17774,0.0,0.9995145631067961,
+black_linegen.py,remove_with_parens,measure_edit,True,17630,142,17772,0.0,0.9995145631067961,
+black_linegen.py,_atom_has_magic_trailing_comma,str_replace,True,17311,17189,34500,,,
+black_linegen.py,_atom_has_magic_trailing_comma,scalpel,True,17257,119,17376,0.0,0.9995145631067961,
+black_linegen.py,_atom_has_magic_trailing_comma,measure_edit,True,17257,117,17374,0.0,0.9995145631067961,
+black_linegen.py,_is_atom_multiline,str_replace,True,17415,17189,34604,,,
+black_linegen.py,_is_atom_multiline,scalpel,True,17306,123,17429,0.0,0.9995145631067961,
+black_linegen.py,_is_atom_multiline,measure_edit,True,17306,119,17425,0.0,0.9995145631067961,
+black_linegen.py,maybe_make_parens_invisible_in_atom,str_replace,True,18811,17189,36000,,,
+black_linegen.py,maybe_make_parens_invisible_in_atom,scalpel,True,18009,139,18148,0.0,0.9995145631067961,
+black_linegen.py,maybe_make_parens_invisible_in_atom,measure_edit,True,18009,137,18146,0.0,0.9995145631067961,
+black_linegen.py,should_split_line,str_replace,True,17623,17189,34812,,,
+black_linegen.py,should_split_line,scalpel,True,17409,119,17528,0.0,0.9995145631067961,
+black_linegen.py,should_split_line,measure_edit,True,17409,123,17532,0.0,0.9995145631067961,
+black_linegen.py,generate_trailers_to_omit,str_replace,True,18365,17189,35554,,,
+black_linegen.py,generate_trailers_to_omit,scalpel,True,17784,126,17910,0.0,0.9995145631067961,
+black_linegen.py,generate_trailers_to_omit,measure_edit,True,17784,126,17910,0.0,0.9995145631067961,
+black_linegen.py,run_transformer,str_replace,True,17933,17189,35122,,,
+black_linegen.py,run_transformer,scalpel,True,17564,107,17671,0.0,0.9995145631067961,
+black_linegen.py,run_transformer,measure_edit,True,17564,107,17671,0.0,0.9995145631067961,
+click_core.py,_complete_visible_commands,str_replace,True,29045,28841,57886,,,
+click_core.py,_complete_visible_commands,scalpel,True,28946,116,29062,0.0,0.9997145304025121,
+click_core.py,_complete_visible_commands,measure_edit,True,28946,114,29060,0.0,0.9997145304025121,
+click_core.py,_check_nested_chain,str_replace,True,29073,28841,57914,,,
+click_core.py,_check_nested_chain,scalpel,True,28960,113,29073,0.0,0.9997145304025121,
+click_core.py,_check_nested_chain,measure_edit,True,28960,111,29071,0.0,0.9997145304025121,
+click_core.py,augment_usage_errors,str_replace,True,29003,28841,57844,,,
+click_core.py,augment_usage_errors,scalpel,True,28926,109,29035,0.0,0.9997145304025121,
+click_core.py,augment_usage_errors,measure_edit,True,28926,107,29033,0.0,0.9997145304025121,
+click_core.py,iter_params_for_processing,str_replace,True,29181,28841,58022,,,
+click_core.py,iter_params_for_processing,scalpel,True,29015,124,29139,0.0,0.9997145304025121,
+click_core.py,iter_params_for_processing,measure_edit,True,29015,120,29135,0.0,0.9997145304025121,
+click_core.py,Context.__init__,str_replace,True,31453,28841,60294,,,
+click_core.py,Context.__init__,scalpel,True,30151,132,30283,0.0,0.9997144488863506,
+click_core.py,Context.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.protected_args,str_replace,True,28959,28841,57800,,,
+click_core.py,Context.protected_args,scalpel,True,28903,91,28994,0.0,0.9997145304025121,
+click_core.py,Context.protected_args,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.to_info_dict,str_replace,True,29123,28841,57964,,,
+click_core.py,Context.to_info_dict,scalpel,True,28986,246,29232,0.0,0.9965743648301456,
+click_core.py,Context.to_info_dict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.__enter__,str_replace,True,28875,28841,57716,,,
+click_core.py,Context.__enter__,scalpel,True,28862,94,28956,0.0,0.9997145304025121,
+click_core.py,Context.__enter__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.__exit__,str_replace,True,28949,28841,57790,,,
+click_core.py,Context.__exit__,scalpel,True,28899,116,29015,0.0,0.9997145304025121,
+click_core.py,Context.__exit__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.scope,str_replace,True,29333,28841,58174,,,
+click_core.py,Context.scope,scalpel,True,29089,547,29636,0.0,0.9920068512703397,
+click_core.py,Context.scope,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.meta,str_replace,True,29241,28841,58082,,,
+click_core.py,Context.meta,scalpel,True,29043,519,29562,0.0,0.9928632600628033,
+click_core.py,Context.meta,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.make_formatter,str_replace,True,29023,28841,57864,,,
+click_core.py,Context.make_formatter,scalpel,True,28935,243,29178,0.0,0.9971453040251214,
+click_core.py,Context.make_formatter,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.with_resource,str_replace,True,29291,28841,58132,,,
+click_core.py,Context.with_resource,scalpel,True,29069,585,29654,0.0,0.9922923208678276,
+click_core.py,Context.with_resource,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.call_on_close,str_replace,True,29015,28841,57856,,,
+click_core.py,Context.call_on_close,scalpel,True,28932,279,29211,0.0,0.9971453040251214,
+click_core.py,Context.call_on_close,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.close,str_replace,True,28935,28841,57776,,,
+click_core.py,Context.close,scalpel,True,28890,171,29061,0.0,0.9985726520125606,
+click_core.py,Context.close,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context._close_with_exception_info,str_replace,True,29055,28841,57896,,,
+click_core.py,Context._close_with_exception_info,scalpel,True,28953,241,29194,0.0,0.9980017128175849,
+click_core.py,Context._close_with_exception_info,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.command_path,str_replace,True,29115,28841,57956,,,
+click_core.py,Context.command_path,scalpel,True,28981,180,29161,0.0,0.9985726520125606,
+click_core.py,Context.command_path,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.find_root,str_replace,True,28905,28841,57746,,,
+click_core.py,Context.find_root,scalpel,True,28876,106,28982,0.0,0.9997145304025121,
+click_core.py,Context.find_root,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.find_object,str_replace,True,28945,28841,57786,,,
+click_core.py,Context.find_object,scalpel,True,28896,108,29004,0.0,0.9997145304025121,
+click_core.py,Context.find_object,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.ensure_object,str_replace,True,28965,28841,57806,,,
+click_core.py,Context.ensure_object,scalpel,True,28906,165,29071,0.0,0.9988581216100485,
+click_core.py,Context.ensure_object,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context._default_map_has,str_replace,True,29049,28841,57890,,,
+click_core.py,Context._default_map_has,scalpel,True,28949,225,29174,0.0,0.9980017128175849,
+click_core.py,Context._default_map_has,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.lookup_default,str_replace,True,29091,28841,57932,,,
+click_core.py,Context.lookup_default,scalpel,True,28969,659,29628,0.0,0.9830747531734838,
+click_core.py,Context.lookup_default,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.fail,str_replace,True,28919,28841,57760,,,
+click_core.py,Context.fail,scalpel,True,28882,161,29043,0.0,0.9982871824150727,
+click_core.py,Context.fail,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.exit,str_replace,True,28963,28841,57804,,,
+click_core.py,Context.exit,scalpel,True,28904,197,29101,0.0,0.9980017128175849,
+click_core.py,Context.exit,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.get_usage,str_replace,True,28897,28841,57738,,,
+click_core.py,Context.get_usage,scalpel,True,28872,132,29004,0.0,0.9988581216100485,
+click_core.py,Context.get_usage,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.get_help,str_replace,True,28897,28841,57738,,,
+click_core.py,Context.get_help,scalpel,True,28872,139,29011,0.0,0.9988581216100485,
+click_core.py,Context.get_help,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context._make_sub_context,str_replace,True,28931,28841,57772,,,
+click_core.py,Context._make_sub_context,scalpel,True,28890,163,29053,0.0,0.9982871824150727,
+click_core.py,Context._make_sub_context,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.invoke,str_replace,True,29779,28841,58620,,,
+click_core.py,Context.invoke,scalpel,True,29312,1648,30960,0.0,0.9634247714048213,
+click_core.py,Context.invoke,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.forward,str_replace,True,29139,28841,57980,,,
+click_core.py,Context.forward,scalpel,True,28992,299,29291,0.0,0.9974307736226092,
+click_core.py,Context.forward,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.set_parameter_source,str_replace,True,28969,28841,57810,,,
+click_core.py,Context.set_parameter_source,scalpel,True,28909,229,29138,0.0,0.9980017128175849,
+click_core.py,Context.set_parameter_source,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Context.get_parameter_source,str_replace,True,29113,28841,57954,,,
+click_core.py,Context.get_parameter_source,scalpel,True,28981,371,29352,0.0,0.9954324864401941,
+click_core.py,Context.get_parameter_source,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.__init__,str_replace,True,29261,28841,58102,,,
+click_core.py,Command.__init__,scalpel,True,29055,166,29221,0.0,0.9997142040583024,
+click_core.py,Command.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.to_info_dict,str_replace,True,28981,28841,57822,,,
+click_core.py,Command.to_info_dict,scalpel,True,28915,121,29036,0.0,0.9997145304025121,
+click_core.py,Command.to_info_dict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.get_usage,str_replace,True,28939,28841,57780,,,
+click_core.py,Command.get_usage,scalpel,True,28893,169,29062,0.0,0.9985726520125606,
+click_core.py,Command.get_usage,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.get_params,str_replace,True,29121,28841,57962,,,
+click_core.py,Command.get_params,scalpel,True,28984,110,29094,0.0,0.9997145304025121,
+click_core.py,Command.get_params,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.format_usage,str_replace,True,28941,28841,57782,,,
+click_core.py,Command.format_usage,scalpel,True,28894,165,29059,0.0,0.9985726520125606,
+click_core.py,Command.format_usage,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.collect_usage_pieces,str_replace,True,28967,28841,57808,,,
+click_core.py,Command.collect_usage_pieces,scalpel,True,28908,165,29073,0.0,0.9988581216100485,
+click_core.py,Command.collect_usage_pieces,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.get_help_option_names,str_replace,True,28945,28841,57786,,,
+click_core.py,Command.get_help_option_names,scalpel,True,28898,113,29011,0.0,0.9997145304025121,
+click_core.py,Command.get_help_option_names,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.get_help_option,str_replace,True,29239,28841,58080,,,
+click_core.py,Command.get_help_option,scalpel,True,29044,228,29272,0.0,0.9977162432200971,
+click_core.py,Command.get_help_option,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.make_parser,str_replace,True,28923,28841,57764,,,
+click_core.py,Command.make_parser,scalpel,True,28885,118,29003,0.0,0.9997145304025121,
+click_core.py,Command.make_parser,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.get_help,str_replace,True,28937,28841,57778,,,
+click_core.py,Command.get_help,scalpel,True,28892,148,29040,0.0,0.9985726520125606,
+click_core.py,Command.get_help,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.get_short_help_str,str_replace,True,29131,28841,57972,,,
+click_core.py,Command.get_short_help_str,scalpel,True,28991,153,29144,0.0,0.9988581216100485,
+click_core.py,Command.get_short_help_str,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.format_help,str_replace,True,29057,28841,57898,,,
+click_core.py,Command.format_help,scalpel,True,28952,270,29222,0.0,0.9965743648301456,
+click_core.py,Command.format_help,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.format_help_text,str_replace,True,29147,28841,57988,,,
+click_core.py,Command.format_help_text,scalpel,True,28998,130,29128,0.0,0.9997145304025121,
+click_core.py,Command.format_help_text,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.format_options,str_replace,True,28971,28841,57812,,,
+click_core.py,Command.format_options,scalpel,True,28909,117,29026,0.0,0.9997145304025121,
+click_core.py,Command.format_options,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.format_epilog,str_replace,True,28941,28841,57782,,,
+click_core.py,Command.format_epilog,scalpel,True,28895,126,29021,0.0,0.9997145304025121,
+click_core.py,Command.format_epilog,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.make_context,str_replace,True,29353,28841,58194,,,
+click_core.py,Command.make_context,scalpel,True,29100,518,29618,0.0,0.9940051384527547,
+click_core.py,Command.make_context,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.parse_args,str_replace,True,29475,28841,58316,,,
+click_core.py,Command.parse_args,scalpel,True,29161,122,29283,0.0,0.9997145304025121,
+click_core.py,Command.parse_args,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.invoke,str_replace,True,29089,28841,57930,,,
+click_core.py,Command.invoke,scalpel,True,28967,152,29119,0.0,0.9988581216100485,
+click_core.py,Command.invoke,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.shell_complete,str_replace,True,29415,28841,58256,,,
+click_core.py,Command.shell_complete,scalpel,True,29131,302,29433,0.0,0.9965743648301456,
+click_core.py,Command.shell_complete,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command.main,str_replace,True,30695,28841,59536,,,
+click_core.py,Command.main,scalpel,True,29770,3484,33254,0.0,0.9099973053085422,
+click_core.py,Command.main,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Command._main_shell_completion,str_replace,True,29247,28841,58088,,,
+click_core.py,Command._main_shell_completion,scalpel,True,29048,372,29420,0.0,0.9962888952326577,
+click_core.py,Command._main_shell_completion,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.__init__,str_replace,True,29363,28841,58204,,,
+click_core.py,Group.__init__,scalpel,True,29106,113,29219,0.0,0.9997145304025121,
+click_core.py,Group.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.to_info_dict,str_replace,True,29025,28841,57866,,,
+click_core.py,Group.to_info_dict,scalpel,True,28938,105,29043,0.0,0.9997145304025121,
+click_core.py,Group.to_info_dict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.add_command,str_replace,True,28997,28841,57838,,,
+click_core.py,Group.add_command,scalpel,True,28922,169,29091,0.0,0.9988581216100485,
+click_core.py,Group.add_command,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.command,str_replace,True,29363,28841,58204,,,
+click_core.py,Group.command,scalpel,True,29104,1082,30186,0.0,0.9717798267672534,
+click_core.py,Group.command,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.group,str_replace,True,29407,28841,58248,,,
+click_core.py,Group.group,scalpel,True,29126,1130,30256,0.0,0.9701534170153417,
+click_core.py,Group.group,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.result_callback,str_replace,True,29485,28841,58326,,,
+click_core.py,Group.result_callback,scalpel,True,29166,543,29709,0.0,0.9920068512703397,
+click_core.py,Group.result_callback,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.get_command,str_replace,True,28919,28841,57760,,,
+click_core.py,Group.get_command,scalpel,True,28883,167,29050,0.0,0.9988581216100485,
+click_core.py,Group.get_command,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.collect_usage_pieces,str_replace,True,28887,28841,57728,,,
+click_core.py,Group.collect_usage_pieces,scalpel,True,28868,117,28985,0.0,0.9997145304025121,
+click_core.py,Group.collect_usage_pieces,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.format_commands,str_replace,True,29191,28841,58032,,,
+click_core.py,Group.format_commands,scalpel,True,29019,152,29171,0.0,0.9988581216100485,
+click_core.py,Group.format_commands,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.parse_args,str_replace,True,29007,28841,57848,,,
+click_core.py,Group.parse_args,scalpel,True,28929,123,29052,0.0,0.9997145304025121,
+click_core.py,Group.parse_args,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.invoke,str_replace,True,29967,28841,58808,,,
+click_core.py,Group.invoke,scalpel,True,29406,126,29532,0.0,0.9997145304025121,
+click_core.py,Group.invoke,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.resolve_command,str_replace,True,29309,28841,58150,,,
+click_core.py,Group.resolve_command,scalpel,True,29078,117,29195,0.0,0.9997145304025121,
+click_core.py,Group.resolve_command,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Group.shell_complete,str_replace,True,29093,28841,57934,,,
+click_core.py,Group.shell_complete,scalpel,True,28970,254,29224,0.0,0.9971453040251214,
+click_core.py,Group.shell_complete,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,CommandCollection.get_command,str_replace,True,28987,28841,57828,,,
+click_core.py,CommandCollection.get_command,scalpel,True,28918,115,29033,0.0,0.9997145304025121,
+click_core.py,CommandCollection.get_command,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,CommandCollection.list_commands,str_replace,True,28909,28841,57750,,,
+click_core.py,CommandCollection.list_commands,scalpel,True,28879,110,28989,0.0,0.9997145304025121,
+click_core.py,CommandCollection.list_commands,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,_check_iter,str_replace,True,28933,28841,57774,,,
+click_core.py,_check_iter,scalpel,True,28889,117,29006,0.0,0.9997145304025121,
+click_core.py,_check_iter,measure_edit,True,28889,113,29002,0.0,0.9997145304025121,
+click_core.py,Parameter.__init__,str_replace,True,29505,28841,58346,,,
+click_core.py,Parameter.__init__,scalpel,True,29177,107,29284,0.0,0.9997145304025121,
+click_core.py,Parameter.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.to_info_dict,str_replace,True,29307,28841,58148,,,
+click_core.py,Parameter.to_info_dict,scalpel,True,29079,272,29351,0.0,0.9965743648301456,
+click_core.py,Parameter.to_info_dict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.human_readable_name,str_replace,True,28915,28841,57756,,,
+click_core.py,Parameter.human_readable_name,scalpel,True,28882,152,29034,0.0,0.9988581216100485,
+click_core.py,Parameter.human_readable_name,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.make_metavar,str_replace,True,28965,28841,57806,,,
+click_core.py,Parameter.make_metavar,scalpel,True,28907,102,29009,0.0,0.9997145304025121,
+click_core.py,Parameter.make_metavar,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.get_default,str_replace,True,29251,28841,58092,,,
+click_core.py,Parameter.get_default,scalpel,True,29049,1055,30104,0.0,0.9744597249508841,
+click_core.py,Parameter.get_default,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.consume_value,str_replace,True,29541,28841,58382,,,
+click_core.py,Parameter.consume_value,scalpel,True,29194,303,29497,0.0,0.9968598344276335,
+click_core.py,Parameter.consume_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.type_cast_value,str_replace,True,29641,28841,58482,,,
+click_core.py,Parameter.type_cast_value,scalpel,True,29246,172,29418,0.0,0.9988581216100485,
+click_core.py,Parameter.type_cast_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.value_is_missing,str_replace,True,29063,28841,57904,,,
+click_core.py,Parameter.value_is_missing,scalpel,True,28958,250,29208,0.0,0.9971453040251214,
+click_core.py,Parameter.value_is_missing,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.process_value,str_replace,True,30001,28841,58842,,,
+click_core.py,Parameter.process_value,scalpel,True,29424,419,29843,0.0,0.9962888952326577,
+click_core.py,Parameter.process_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.resolve_envvar_value,str_replace,True,29467,28841,58308,,,
+click_core.py,Parameter.resolve_envvar_value,scalpel,True,29159,528,29687,0.0,0.9928632600628033,
+click_core.py,Parameter.resolve_envvar_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.value_from_envvar,str_replace,True,29051,28841,57892,,,
+click_core.py,Parameter.value_from_envvar,scalpel,True,28953,257,29210,0.0,0.9974307736226092,
+click_core.py,Parameter.value_from_envvar,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.handle_parse_result,str_replace,True,29721,28841,58562,,,
+click_core.py,Parameter.handle_parse_result,scalpel,True,29285,301,29586,0.0,0.9965743648301456,
+click_core.py,Parameter.handle_parse_result,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.get_error_hint,str_replace,True,29003,28841,57844,,,
+click_core.py,Parameter.get_error_hint,scalpel,True,28926,212,29138,0.0,0.9980017128175849,
+click_core.py,Parameter.get_error_hint,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Parameter.shell_complete,str_replace,True,29193,28841,58034,,,
+click_core.py,Parameter.shell_complete,scalpel,True,29020,323,29343,0.0,0.9968598344276335,
+click_core.py,Parameter.shell_complete,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.__init__,str_replace,True,31389,28841,60230,,,
+click_core.py,Option.__init__,scalpel,True,30119,108,30227,0.0,0.9997145304025121,
+click_core.py,Option.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.to_info_dict,str_replace,True,29151,28841,57992,,,
+click_core.py,Option.to_info_dict,scalpel,True,29000,196,29196,0.0,0.9985726520125606,
+click_core.py,Option.to_info_dict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.get_default,str_replace,True,29407,28841,58248,,,
+click_core.py,Option.get_default,scalpel,True,29127,536,29663,0.0,0.9945760776477305,
+click_core.py,Option.get_default,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.get_error_hint,str_replace,True,28927,28841,57768,,,
+click_core.py,Option.get_error_hint,scalpel,True,28888,127,29015,0.0,0.9997145304025121,
+click_core.py,Option.get_error_hint,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option._parse_decls,str_replace,True,29613,28841,58454,,,
+click_core.py,Option._parse_decls,scalpel,True,29231,119,29350,0.0,0.9997145304025121,
+click_core.py,Option._parse_decls,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.add_to_parser,str_replace,True,29211,28841,58052,,,
+click_core.py,Option.add_to_parser,scalpel,True,29030,116,29146,0.0,0.9997145304025121,
+click_core.py,Option.add_to_parser,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.get_help_record,str_replace,True,29437,28841,58278,,,
+click_core.py,Option.get_help_record,scalpel,True,29143,102,29245,0.0,0.9997145304025121,
+click_core.py,Option.get_help_record,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.get_help_extra,str_replace,True,30029,28841,58870,,,
+click_core.py,Option.get_help_extra,scalpel,True,29439,124,29563,0.0,0.9997145304025121,
+click_core.py,Option.get_help_extra,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.prompt_for_value,str_replace,True,29801,28841,58642,,,
+click_core.py,Option.prompt_for_value,scalpel,True,29325,205,29530,0.0,0.9982871824150727,
+click_core.py,Option.prompt_for_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.resolve_envvar_value,str_replace,True,29221,28841,58062,,,
+click_core.py,Option.resolve_envvar_value,scalpel,True,29036,329,29365,0.0,0.9971453040251214,
+click_core.py,Option.resolve_envvar_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.value_from_envvar,str_replace,True,29623,28841,58464,,,
+click_core.py,Option.value_from_envvar,scalpel,True,29237,356,29593,0.0,0.9962888952326577,
+click_core.py,Option.value_from_envvar,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.consume_value,str_replace,True,29849,28841,58690,,,
+click_core.py,Option.consume_value,scalpel,True,29348,290,29638,0.0,0.9971453040251214,
+click_core.py,Option.consume_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Option.process_value,str_replace,True,28983,28841,57824,,,
+click_core.py,Option.process_value,scalpel,True,28915,177,29092,0.0,0.9997141223556318,
+click_core.py,Option.process_value,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Argument.__init__,str_replace,True,29093,28841,57934,,,
+click_core.py,Argument.__init__,scalpel,True,28971,140,29111,0.0,0.9997144488863506,
+click_core.py,Argument.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Argument.human_readable_name,str_replace,True,28883,28841,57724,,,
+click_core.py,Argument.human_readable_name,scalpel,True,28866,106,28972,0.0,0.9997145304025121,
+click_core.py,Argument.human_readable_name,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Argument.make_metavar,str_replace,True,29013,28841,57854,,,
+click_core.py,Argument.make_metavar,scalpel,True,28931,117,29048,0.0,0.9997145304025121,
+click_core.py,Argument.make_metavar,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Argument._parse_decls,str_replace,True,29083,28841,57924,,,
+click_core.py,Argument._parse_decls,scalpel,True,28966,122,29088,0.0,0.9997145304025121,
+click_core.py,Argument._parse_decls,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,Argument.get_error_hint,str_replace,True,28903,28841,57744,,,
+click_core.py,Argument.get_error_hint,scalpel,True,28876,125,29001,0.0,0.9997145304025121,
+click_core.py,Argument.get_error_hint,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+click_core.py,__getattr__,str_replace,True,29095,28841,57936,,,
+click_core.py,__getattr__,scalpel,True,28971,94,29065,0.0,0.9997145304025121,
+click_core.py,__getattr__,measure_edit,True,28971,90,29061,0.0,0.9997145304025121,
