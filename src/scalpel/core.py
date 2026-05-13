@@ -8,6 +8,7 @@ from typing import Optional, Union
 
 import libcst as cst
 from libcst import FlattenSentinel, RemovalSentinel
+from libcst.metadata import MetadataWrapper, PositionProvider
 
 from scalpel.measure import blast_radius, patch_locality, token_cost
 from scalpel.types import EditResult
@@ -243,9 +244,87 @@ def edit_class_method(
     )
 
 
-def read_structure(file_path: str) -> list[dict[str, object]]:
-    raise NotImplementedError("read_structure not yet implemented")
+def _sig_first_line(node: cst.FunctionDef | cst.ClassDef) -> str:
+    """Return the def/class signature line with no body and no decorators."""
+    stub = node.with_changes(
+        decorators=(),
+        leading_lines=(),
+        body=cst.IndentedBlock([cst.SimpleStatementLine([cst.Pass()])]),
+    )
+    lines = cst.Module(body=[stub]).code.splitlines()
+    return lines[0] if lines else node.name.value
+
+
+def read_structure(file_path: str) -> str:
+    """Return top-level functions/classes with signatures and line ranges, plain text."""
+    source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    tree = cst.parse_module(source)
+    wrapper = MetadataWrapper(tree)
+    positions = wrapper.resolve(PositionProvider)
+
+    out: list[str] = []
+    for stmt in wrapper.module.body:
+        if isinstance(stmt, cst.FunctionDef):
+            rng = positions[stmt]
+            out.append(f"{_sig_first_line(stmt)}  # L{rng.start.line}-{rng.end.line}")
+        elif isinstance(stmt, cst.ClassDef):
+            rng = positions[stmt]
+            out.append(f"{_sig_first_line(stmt)}  # L{rng.start.line}-{rng.end.line}")
+            for item in stmt.body.body:
+                if isinstance(item, cst.FunctionDef):
+                    mr = positions[item]
+                    out.append(
+                        f"  {_sig_first_line(item)}  # L{mr.start.line}-{mr.end.line}"
+                    )
+
+    return "\n".join(out) if out else "(empty file)"
 
 
 def measure_edit(file_path: str, function_name: str, new_body: str) -> EditResult:
-    raise NotImplementedError("measure_edit not yet implemented")
+    """Dry-run edit_function_body: metrics and diff without writing the file."""
+    source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    tree = cst.parse_module(source)
+
+    if find_symbol(tree, function_name) is None:
+        return EditResult(
+            success=False,
+            syntax_valid=True,
+            diff="",
+            error=(
+                f"function '{function_name}' not found at top level; "
+                "for class methods use edit_class_method"
+            ),
+            blast_radius=None,
+            patch_locality=None,
+            token_cost=None,
+        )
+
+    parsed_body = _parse_new_body(new_body)
+    if parsed_body is None:
+        return EditResult(
+            success=False,
+            syntax_valid=False,
+            diff="",
+            error="new_body has a syntax error",
+            blast_radius=None,
+            patch_locality=None,
+            token_cost=None,
+        )
+
+    replacer = _TopLevelFunctionReplacer(function_name, parsed_body)
+    new_tree = tree.visit(replacer)
+    new_source = new_tree.code
+    diff = _make_diff(source, new_source, file_path)
+    br = blast_radius(source, new_source)
+    pl = patch_locality(diff, len(new_source.splitlines()))
+    tc = token_cost(source + function_name + new_body, diff)
+
+    return EditResult(
+        success=True,
+        syntax_valid=True,
+        diff=diff,
+        error=None,
+        blast_radius=br,
+        patch_locality=pl,
+        token_cost=tc,
+    )
