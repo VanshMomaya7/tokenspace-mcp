@@ -9,5 +9,4 @@ wheels/
 # Virtual environments
 .venv
 
-# Benchmark results — never committed
-benchmarks/results/
+# Benchmark results are committed intentionally — do not ignore

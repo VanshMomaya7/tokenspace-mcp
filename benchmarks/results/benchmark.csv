@@ -1,0 +1,178 @@
+file,function,approach,success,input_tokens,output_tokens,total_tokens,blast_radius,patch_locality,error
+auth_service.py,hash_password,str_replace,True,651,497,1148,,,
+auth_service.py,hash_password,scalpel,True,576,115,691,0.0,0.9857142857142858,
+auth_service.py,hash_password,measure_edit,True,576,111,687,0.0,0.9857142857142858,
+auth_service.py,verify_password,str_replace,True,559,497,1056,,,
+auth_service.py,verify_password,scalpel,True,530,117,647,0.0,0.9857142857142858,
+auth_service.py,verify_password,measure_edit,True,530,111,641,0.0,0.9857142857142858,
+auth_service.py,TokenStore.__init__,str_replace,True,563,497,1060,,,
+auth_service.py,TokenStore.__init__,scalpel,True,535,128,663,0.0,0.9857142857142858,
+auth_service.py,TokenStore.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+auth_service.py,TokenStore.issue,str_replace,True,601,497,1098,,,
+auth_service.py,TokenStore.issue,scalpel,True,552,136,688,0.0,0.9857142857142858,
+auth_service.py,TokenStore.issue,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+auth_service.py,TokenStore.validate,str_replace,True,641,497,1138,,,
+auth_service.py,TokenStore.validate,scalpel,True,572,118,690,0.0,0.9857142857142858,
+auth_service.py,TokenStore.validate,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+auth_service.py,TokenStore.revoke,str_replace,True,549,497,1046,,,
+auth_service.py,TokenStore.revoke,scalpel,True,528,109,637,0.0,0.9857142857142858,
+auth_service.py,TokenStore.revoke,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+cache_layer.py,make_cache_key,str_replace,True,501,459,960,,,
+cache_layer.py,make_cache_key,scalpel,True,483,101,584,0.0,0.9824561403508771,
+cache_layer.py,make_cache_key,measure_edit,True,483,95,578,0.0,0.9824561403508771,
+cache_layer.py,is_expired,str_replace,True,515,459,974,,,
+cache_layer.py,is_expired,scalpel,True,489,112,601,0.0,0.9824561403508771,
+cache_layer.py,is_expired,measure_edit,True,489,104,593,0.0,0.9824561403508771,
+cache_layer.py,LRUCache.__init__,str_replace,True,549,459,1008,,,
+cache_layer.py,LRUCache.__init__,scalpel,True,510,137,647,0.0,0.9824561403508771,
+cache_layer.py,LRUCache.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+cache_layer.py,LRUCache.get,str_replace,True,609,459,1068,,,
+cache_layer.py,LRUCache.get,scalpel,True,538,129,667,0.0,0.9824561403508771,
+cache_layer.py,LRUCache.get,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+cache_layer.py,LRUCache.set,str_replace,True,601,459,1060,,,
+cache_layer.py,LRUCache.set,scalpel,True,534,121,655,0.0,0.9824561403508771,
+cache_layer.py,LRUCache.set,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+cache_layer.py,LRUCache.evict,str_replace,True,517,459,976,,,
+cache_layer.py,LRUCache.evict,scalpel,True,493,120,613,0.0,0.9824561403508771,
+cache_layer.py,LRUCache.evict,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+config_parser.py,parse_line,str_replace,True,558,414,972,,,
+config_parser.py,parse_line,scalpel,True,488,122,610,0.0,0.9818181818181818,
+config_parser.py,parse_line,measure_edit,True,488,116,604,0.0,0.9818181818181818,
+config_parser.py,load_file,str_replace,True,562,414,976,,,
+config_parser.py,load_file,scalpel,True,490,125,615,0.0,0.9818181818181818,
+config_parser.py,load_file,measure_edit,True,490,121,611,0.0,0.9818181818181818,
+config_parser.py,Config.__init__,str_replace,True,428,414,842,,,
+config_parser.py,Config.__init__,scalpel,True,425,127,552,0.0,0.9818181818181818,
+config_parser.py,Config.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+config_parser.py,Config.get,str_replace,True,466,414,880,,,
+config_parser.py,Config.get,scalpel,True,442,124,566,0.0,0.9818181818181818,
+config_parser.py,Config.get,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+config_parser.py,Config.get_int,str_replace,True,520,414,934,,,
+config_parser.py,Config.get_int,scalpel,True,470,130,600,0.0,0.9818181818181818,
+config_parser.py,Config.get_int,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+config_parser.py,Config.set,str_replace,True,458,414,872,,,
+config_parser.py,Config.set,scalpel,True,438,108,546,0.0,0.9818181818181818,
+config_parser.py,Config.set,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+data_validator.py,ValidationError.__init__,str_replace,True,566,518,1084,,,
+data_validator.py,ValidationError.__init__,scalpel,True,546,119,665,0.0,0.9855072463768116,
+data_validator.py,ValidationError.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+data_validator.py,coerce_int,str_replace,True,614,518,1132,,,
+data_validator.py,coerce_int,scalpel,True,569,101,670,0.0,0.9855072463768116,
+data_validator.py,coerce_int,measure_edit,True,569,89,658,0.0,0.9855072463768116,
+data_validator.py,coerce_bool,str_replace,True,716,518,1234,,,
+data_validator.py,coerce_bool,scalpel,True,620,104,724,0.0,0.9855072463768116,
+data_validator.py,coerce_bool,measure_edit,True,620,94,714,0.0,0.9855072463768116,
+data_validator.py,Validator.__init__,str_replace,True,532,518,1050,,,
+data_validator.py,Validator.__init__,scalpel,True,529,131,660,0.0,0.9852941176470589,
+data_validator.py,Validator.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+data_validator.py,Validator.validate,str_replace,True,692,518,1210,,,
+data_validator.py,Validator.validate,scalpel,True,607,120,727,0.0,0.9855072463768116,
+data_validator.py,Validator.validate,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+data_validator.py,Validator.coerce,str_replace,True,714,518,1232,,,
+data_validator.py,Validator.coerce,scalpel,True,619,124,743,0.0,0.9855072463768116,
+data_validator.py,Validator.coerce,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+event_emitter.py,validate_event_name,str_replace,True,507,425,932,,,
+event_emitter.py,validate_event_name,scalpel,True,469,121,590,0.0,0.9827586206896551,
+event_emitter.py,validate_event_name,measure_edit,True,469,115,584,0.0,0.9827586206896551,
+event_emitter.py,call_listener,str_replace,True,503,425,928,,,
+event_emitter.py,call_listener,scalpel,True,466,111,577,0.0,0.9827586206896551,
+event_emitter.py,call_listener,measure_edit,True,466,107,573,0.0,0.9827586206896551,
+event_emitter.py,EventEmitter.__init__,str_replace,True,453,425,878,,,
+event_emitter.py,EventEmitter.__init__,scalpel,True,444,119,563,0.0,0.9827586206896551,
+event_emitter.py,EventEmitter.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+event_emitter.py,EventEmitter.on,str_replace,True,591,425,1016,,,
+event_emitter.py,EventEmitter.on,scalpel,True,511,125,636,0.0,0.9827586206896551,
+event_emitter.py,EventEmitter.on,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+event_emitter.py,EventEmitter.emit,str_replace,True,525,425,950,,,
+event_emitter.py,EventEmitter.emit,scalpel,True,478,125,603,0.0,0.9827586206896551,
+event_emitter.py,EventEmitter.emit,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+event_emitter.py,EventEmitter.off,str_replace,True,515,425,940,,,
+event_emitter.py,EventEmitter.off,scalpel,True,473,119,592,0.0,0.9827586206896551,
+event_emitter.py,EventEmitter.off,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+file_processor.py,read_lines,str_replace,True,445,385,830,,,
+file_processor.py,read_lines,scalpel,True,417,110,527,0.0,0.9795918367346939,
+file_processor.py,read_lines,measure_edit,True,417,104,521,0.0,0.9795918367346939,
+file_processor.py,write_lines,str_replace,True,487,385,872,,,
+file_processor.py,write_lines,scalpel,True,438,122,560,0.0,0.9795918367346939,
+file_processor.py,write_lines,measure_edit,True,438,118,556,0.0,0.9795918367346939,
+file_processor.py,FileProcessor.__init__,str_replace,True,411,385,796,,,
+file_processor.py,FileProcessor.__init__,scalpel,True,403,148,551,0.0,0.9791666666666666,
+file_processor.py,FileProcessor.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+file_processor.py,FileProcessor.add_transform,str_replace,True,419,385,804,,,
+file_processor.py,FileProcessor.add_transform,scalpel,True,406,109,515,0.0,0.9795918367346939,
+file_processor.py,FileProcessor.add_transform,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+file_processor.py,FileProcessor.process,str_replace,True,503,385,888,,,
+file_processor.py,FileProcessor.process,scalpel,True,447,124,571,0.0,0.9795918367346939,
+file_processor.py,FileProcessor.process,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+file_processor.py,FileProcessor.process_glob,str_replace,True,465,385,850,,,
+file_processor.py,FileProcessor.process_glob,scalpel,True,429,124,553,0.0,0.9795918367346939,
+file_processor.py,FileProcessor.process_glob,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+http_client.py,build_request,str_replace,True,709,575,1284,,,
+http_client.py,build_request,scalpel,True,644,147,791,0.0,0.9838709677419355,
+http_client.py,build_request,measure_edit,True,644,141,785,0.0,0.9838709677419355,
+http_client.py,parse_response,str_replace,True,653,575,1228,,,
+http_client.py,parse_response,scalpel,True,616,121,737,0.0,0.9838709677419355,
+http_client.py,parse_response,measure_edit,True,616,113,729,0.0,0.9838709677419355,
+http_client.py,HttpClient.__init__,str_replace,True,609,575,1184,,,
+http_client.py,HttpClient.__init__,scalpel,True,596,119,715,0.0,0.9838709677419355,
+http_client.py,HttpClient.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+http_client.py,HttpClient.get,str_replace,True,777,575,1352,,,
+http_client.py,HttpClient.get,scalpel,True,678,139,817,0.0,0.9838709677419355,
+http_client.py,HttpClient.get,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+http_client.py,HttpClient.post,str_replace,True,697,575,1272,,,
+http_client.py,HttpClient.post,scalpel,True,638,137,775,0.0,0.9838709677419355,
+http_client.py,HttpClient.post,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+http_client.py,HttpClient.delete,str_replace,True,709,575,1284,,,
+http_client.py,HttpClient.delete,scalpel,True,644,121,765,0.0,0.9838709677419355,
+http_client.py,HttpClient.delete,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rate_limiter.py,compute_tokens,str_replace,True,553,463,1016,,,
+rate_limiter.py,compute_tokens,scalpel,True,510,130,640,0.0,0.9814814814814815,
+rate_limiter.py,compute_tokens,measure_edit,True,510,124,634,0.0,0.9814814814814815,
+rate_limiter.py,tokens_needed,str_replace,True,507,463,970,,,
+rate_limiter.py,tokens_needed,scalpel,True,487,107,594,0.0,0.9814814814814815,
+rate_limiter.py,tokens_needed,measure_edit,True,487,99,586,0.0,0.9814814814814815,
+rate_limiter.py,RateLimiter.__init__,str_replace,True,561,463,1024,,,
+rate_limiter.py,RateLimiter.__init__,scalpel,True,518,150,668,0.0,0.9814814814814815,
+rate_limiter.py,RateLimiter.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rate_limiter.py,RateLimiter.allow,str_replace,True,569,463,1032,,,
+rate_limiter.py,RateLimiter.allow,scalpel,True,520,126,646,0.0,0.9814814814814815,
+rate_limiter.py,RateLimiter.allow,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rate_limiter.py,RateLimiter._refill,str_replace,True,569,463,1032,,,
+rate_limiter.py,RateLimiter._refill,scalpel,True,521,128,649,0.0,0.9814814814814815,
+rate_limiter.py,RateLimiter._refill,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+rate_limiter.py,RateLimiter.wait_time,str_replace,True,579,463,1042,,,
+rate_limiter.py,RateLimiter.wait_time,scalpel,True,526,125,651,0.0,0.9814814814814815,
+rate_limiter.py,RateLimiter.wait_time,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+retry_handler.py,backoff_delay,str_replace,True,560,478,1038,,,
+retry_handler.py,backoff_delay,scalpel,True,522,138,660,0.0,0.9827586206896551,
+retry_handler.py,backoff_delay,measure_edit,True,522,130,652,0.0,0.9827586206896551,
+retry_handler.py,is_retryable,str_replace,True,564,478,1042,,,
+retry_handler.py,is_retryable,scalpel,True,524,120,644,0.0,0.9827586206896551,
+retry_handler.py,is_retryable,measure_edit,True,524,116,640,0.0,0.9827586206896551,
+retry_handler.py,RetryHandler.__init__,str_replace,True,532,478,1010,,,
+retry_handler.py,RetryHandler.__init__,scalpel,True,510,122,632,0.0,0.9827586206896551,
+retry_handler.py,RetryHandler.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+retry_handler.py,RetryHandler.run,str_replace,True,724,478,1202,,,
+retry_handler.py,RetryHandler.run,scalpel,True,606,126,732,0.0,0.9827586206896551,
+retry_handler.py,RetryHandler.run,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+retry_handler.py,RetryHandler.should_retry,str_replace,True,544,478,1022,,,
+retry_handler.py,RetryHandler.should_retry,scalpel,True,516,131,647,0.0,0.9827586206896551,
+retry_handler.py,RetryHandler.should_retry,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+task_queue.py,make_item,str_replace,True,515,449,964,,,
+task_queue.py,make_item,scalpel,True,484,122,606,0.0,0.9827586206896551,
+task_queue.py,make_item,measure_edit,True,484,114,598,0.0,0.9827586206896551,
+task_queue.py,drain,str_replace,True,549,449,998,,,
+task_queue.py,drain,scalpel,True,501,131,632,0.0,0.9827586206896551,
+task_queue.py,drain,measure_edit,True,501,123,624,0.0,0.9827586206896551,
+task_queue.py,TaskQueue.__init__,str_replace,True,493,449,942,,,
+task_queue.py,TaskQueue.__init__,scalpel,True,476,123,599,0.0,0.9827586206896551,
+task_queue.py,TaskQueue.__init__,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+task_queue.py,TaskQueue.enqueue,str_replace,True,585,449,1034,,,
+task_queue.py,TaskQueue.enqueue,scalpel,True,520,132,652,0.0,0.9827586206896551,
+task_queue.py,TaskQueue.enqueue,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+task_queue.py,TaskQueue.dequeue,str_replace,True,525,449,974,,,
+task_queue.py,TaskQueue.dequeue,scalpel,True,491,109,600,0.0,0.9827586206896551,
+task_queue.py,TaskQueue.dequeue,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
+task_queue.py,TaskQueue.peek,str_replace,True,501,449,950,,,
+task_queue.py,TaskQueue.peek,scalpel,True,478,115,593,0.0,0.9827586206896551,
+task_queue.py,TaskQueue.peek,measure_edit,False,0,0,0,,,measure_edit: class methods not supported
