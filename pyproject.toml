@@ -3,16 +3,35 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "scalpel"
+name = "scalpel-mcp"
 version = "0.1.0"
-description = "AST-based editing primitives for Python with built-in measurement"
+description = "Surgical AST-based Python editing for AI agents — edit by symbol name, not text position. Built-in blast radius and token cost on every edit."
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.12"
-dependencies = [
-    "libcst>=1.8.6",
-    "mcp>=1.27.1",
-    "tiktoken>=0.12.0",
+authors = [{ name = "Vansh Momaya", email = "vanshmomaya9@gmail.com" }]
+keywords = ["mcp", "ast", "python", "claude", "libcst", "code-editing", "ai-agents"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
+dependencies = [
+    "mcp>=1.0.0",
+    "libcst>=1.0.0",
+    "tiktoken>=0.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/VanshMomaya7/scalpel"
+Repository = "https://github.com/VanshMomaya7/scalpel"
+
+[project.scripts]
+scalpel = "scalpel.server:main"
 
 [dependency-groups]
 dev = [
