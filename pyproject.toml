@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "scalpel-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Surgical AST-based Python editing for AI agents — edit by symbol name, not text position. Built-in blast radius and token cost on every edit."
 readme = "README.md"
 license = { text = "MIT" }
@@ -43,6 +43,7 @@ dev = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/scalpel"]
+artifacts = [".claude/SKILL.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

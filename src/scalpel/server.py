@@ -1,6 +1,10 @@
 """MCP tool definitions. Thin wrapper only — no business logic here."""
 from __future__ import annotations
 
+import importlib.resources
+import pathlib
+import sys
+
 from mcp.server.fastmcp import FastMCP
 
 from scalpel import core
@@ -76,8 +80,23 @@ def measure_edit(file_path: str, function_name: str, new_body: str) -> str:
     return "\n".join(lines)
 
 
+def install_skill() -> None:
+    skill_text = (
+        importlib.resources.files("scalpel")
+        .joinpath("SKILL.md")
+        .read_text(encoding="utf-8")
+    )
+    dest = pathlib.Path(".claude") / "SKILL.md"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(skill_text, encoding="utf-8")
+    print("✓ Scalpel skill installed to .claude/SKILL.md")
+
+
 def main() -> None:
-    mcp.run()
+    if len(sys.argv) > 1 and sys.argv[1] == "install-skill":
+        install_skill()
+    else:
+        mcp.run()
 
 
 if __name__ == "__main__":
