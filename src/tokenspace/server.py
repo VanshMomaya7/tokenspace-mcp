@@ -89,8 +89,12 @@ def install_skill() -> None:
     )
     dest = pathlib.Path(".claude") / "SKILL.md"
     dest.parent.mkdir(parents=True, exist_ok=True)
+    already_exists = dest.exists()
     dest.write_text(skill_text, encoding="utf-8")
-    print("Skill installed: .claude/SKILL.md")
+    if already_exists:
+        print("Skill already installed — updated .claude/SKILL.md")
+    else:
+        print("Skill installed: .claude/SKILL.md")
 
     settings_path = pathlib.Path(".claude") / "settings.json"
     config: dict[str, object] = (
@@ -103,11 +107,30 @@ def install_skill() -> None:
     if "tokenspace" not in mcp_servers:
         mcp_servers["tokenspace"] = {"command": "tokenspace", "args": []}
         settings_path.write_text(json.dumps(config, indent=2), encoding="utf-8")
-    print("MCP server registered: .claude/settings.json")
+        print("MCP server registered: .claude/settings.json")
+    else:
+        print("MCP server already registered — skipping")
     print("Restart Claude Code to activate Tokenspace.")
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] in ("--help", "-h"):
+        print(
+            "tokenspace-mcp — Surgical AST-based Python editing for AI agents\n"
+            "\n"
+            "Commands:\n"
+            "  tokenspace               Start the MCP server (connect via Claude Code)\n"
+            "  tokenspace install-skill Install the Claude Code skill and MCP config\n"
+            "\n"
+            "Tools exposed via MCP:\n"
+            "  read_structure(file_path)\n"
+            "  edit_function_body(file_path, function_name, new_body)\n"
+            "  edit_class_method(file_path, class_name, method_name, new_body)\n"
+            "  measure_edit(file_path, function_name, new_body)\n"
+            "\n"
+            "Docs: https://github.com/VanshMomaya7/tokenspace\n"
+        )
+        return
     if len(sys.argv) > 1 and sys.argv[1] == "install-skill":
         install_skill()
     else:

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tokenspace-mcp"
-version = "0.1.0"
+version = "0.1.4"
 description = "Surgical AST-based Python editing for AI agents — edit by symbol name, not text position. Built-in blast radius and token cost on every edit."
 readme = "README.md"
 license = { text = "MIT" }

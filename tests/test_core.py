@@ -3,7 +3,13 @@ from __future__ import annotations
 import libcst as cst
 import pytest
 
-from tokenspace.core import edit_class_method, edit_function_body, find_symbol, read_structure
+from tokenspace.core import (
+    edit_class_method,
+    edit_function_body,
+    find_symbol,
+    measure_edit,
+    read_structure,
+)
 from tokenspace.types import EditResult
 
 
@@ -210,3 +216,59 @@ def test_edit_class_method_syntax_error_no_write(
     assert result.success is False
     assert result.syntax_valid is False
     assert f.read_text(encoding="utf-8") == original  # type: ignore[union-attr]
+
+
+# ── Bug 2: read_structure on files with syntax errors ─────────────────────────
+
+
+def test_read_structure_syntax_error_returns_string(tmp_path: pytest.TempPathFactory) -> None:
+    f = tmp_path / "bad.py"  # type: ignore[operator]
+    f.write_text("def foo(:\n    pass\n", encoding="utf-8")  # type: ignore[union-attr]
+    result = read_structure(str(f))
+    assert result.startswith("Error: could not parse")
+    assert str(f) in result
+
+
+# ── Bug 3: missing files return errors, never raise ───────────────────────────
+
+
+def test_read_structure_missing_file(tmp_path: pytest.TempPathFactory) -> None:
+    result = read_structure(str(tmp_path / "nonexistent.py"))  # type: ignore[operator]
+    assert result.startswith("Error: file not found")
+
+
+def test_edit_function_body_missing_file(tmp_path: pytest.TempPathFactory) -> None:
+    result = edit_function_body(str(tmp_path / "nonexistent.py"), "foo", "pass")  # type: ignore[operator]
+    assert result.success is False
+    assert result.error is not None
+    assert "File not found" in result.error
+
+
+def test_edit_class_method_missing_file(tmp_path: pytest.TempPathFactory) -> None:
+    result = edit_class_method(
+        str(tmp_path / "nonexistent.py"), "Foo", "bar", "pass"  # type: ignore[operator]
+    )
+    assert result.success is False
+    assert result.error is not None
+    assert "File not found" in result.error
+
+
+def test_measure_edit_missing_file(tmp_path: pytest.TempPathFactory) -> None:
+    result = measure_edit(str(tmp_path / "nonexistent.py"), "foo", "pass")  # type: ignore[operator]
+    assert result.success is False
+    assert result.error is not None
+    assert "File not found" in result.error
+
+
+# ── Warning 3: measure_edit class_name does not raise TypeError ───────────────
+
+
+def test_measure_edit_class_name_returns_error_not_typeerror(
+    tmp_path: pytest.TempPathFactory,
+) -> None:
+    f = tmp_path / "mod.py"  # type: ignore[operator]
+    f.write_text("def foo():\n    pass\n", encoding="utf-8")  # type: ignore[union-attr]
+    result = measure_edit(str(f), "foo", "pass", class_name="Foo")
+    assert result.success is False
+    assert result.error is not None
+    assert "class method" in result.error.lower()

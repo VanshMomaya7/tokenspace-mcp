@@ -131,10 +131,25 @@ def _find_method(
     return None
 
 
+def _file_not_found_result(file_path: str) -> EditResult:
+    return EditResult(
+        success=False,
+        syntax_valid=False,
+        diff="",
+        error=f"File not found: {file_path}",
+        blast_radius=None,
+        patch_locality=None,
+        token_cost=None,
+    )
+
+
 def edit_function_body(
     file_path: str, function_name: str, new_body: str
 ) -> EditResult:
-    source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    try:
+        source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return _file_not_found_result(file_path)
     tree = cst.parse_module(source)
 
     if find_symbol(tree, function_name) is None:
@@ -183,7 +198,10 @@ def edit_function_body(
 def edit_class_method(
     file_path: str, class_name: str, method_name: str, new_body: str
 ) -> EditResult:
-    source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    try:
+        source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return _file_not_found_result(file_path)
     tree = cst.parse_module(source)
 
     class_exists = any(
@@ -267,8 +285,14 @@ def _sig_compact(node: cst.FunctionDef | cst.ClassDef) -> str:
 
 def read_structure(file_path: str) -> str:
     """Return top-level functions/classes with compact signatures and line ranges."""
-    source = pathlib.Path(file_path).read_text(encoding="utf-8")
-    tree = cst.parse_module(source)
+    try:
+        source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return f"Error: file not found — {file_path}"
+    try:
+        tree = cst.parse_module(source)
+    except cst.ParserSyntaxError as exc:
+        return f"Error: could not parse {file_path} — {exc}"
     wrapper = MetadataWrapper(tree)
     positions = wrapper.resolve(PositionProvider)
 
@@ -290,9 +314,30 @@ def read_structure(file_path: str) -> str:
     return "\n".join(out) if out else "(empty file)"
 
 
-def measure_edit(file_path: str, function_name: str, new_body: str) -> EditResult:
+def measure_edit(
+    file_path: str,
+    function_name: str,
+    new_body: str,
+    class_name: str | None = None,
+) -> EditResult:
     """Dry-run edit_function_body: metrics and diff without writing the file."""
-    source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    if class_name is not None:
+        return EditResult(
+            success=False,
+            syntax_valid=True,
+            diff="",
+            error=(
+                "measure_edit does not yet support class methods. "
+                "Call edit_class_method directly and check blast_radius in the result."
+            ),
+            blast_radius=None,
+            patch_locality=None,
+            token_cost=None,
+        )
+    try:
+        source = pathlib.Path(file_path).read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return _file_not_found_result(file_path)
     tree = cst.parse_module(source)
 
     if find_symbol(tree, function_name) is None:
