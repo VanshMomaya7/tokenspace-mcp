@@ -27,8 +27,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/VanshMomaya7/tokenspace"
-Repository = "https://github.com/VanshMomaya7/tokenspace"
+Homepage = "https://github.com/VanshMomaya7/tokenspace-mcp"
+Repository = "https://github.com/VanshMomaya7/tokenspace-mcp"
 
 [project.scripts]
 tokenspace = "tokenspace.server:main"
