@@ -27,6 +27,8 @@ Measured on **406 real functions** across 10 popular OSS projects (requests, fla
 | Single edit — 406 functions total | 36,907 tokens | 18,674 tokens | **49.4%** |
 | 5 edits / same file — 10 files total | 70,948 tokens | 2,039 tokens | **95.4%** |
 
+![Live demo — full workflow summary](docs/images/5.png)
+
 The multi-edit gap is large because `str_replace` pays the full file on every call. Tokenspace pays for `read_structure` once and only the function name + new body per subsequent edit.
 
 ## MCP Tools
@@ -37,6 +39,8 @@ The multi-edit gap is large because `str_replace` pays the full file on every ca
 | `edit_function_body` | Replace a top-level function body by name. Writes to disk. Returns diff + metrics. |
 | `edit_class_method` | Replace a class method body by name. Writes to disk. Returns diff + metrics. |
 | `measure_edit` | Dry-run: compute blast radius and token cost without writing. |
+
+![edit_function_body live output](docs/images/3.png)
 
 ### Metrics returned on every edit
 
@@ -66,6 +70,8 @@ The second command:
 3. edit_function_body / edit_class_method  → write if metrics look good
 4. Check result: success, diff, blast_radius, patch_locality, token_cost
 ```
+
+![read_structure output](docs/images/1.png)
 
 For multiple edits on the same file, call `read_structure` once and skip `measure_edit` — the multi-edit token reduction reaches 95.4%.
 
