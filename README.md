@@ -1,16 +1,16 @@
-# scalpel-mcp
+# tokenspace-mcp
 
 Surgical AST-based Python editing for AI agents — edit by symbol name, not text position. Built-in blast radius and token cost on every edit.
 
 ```bash
-pip install scalpel-mcp
+pip install tokenspace-mcp
 ```
 
 ## Why
 
 AI coding agents (Claude Code, Cursor, Aider) edit Python via string replacement or line numbers. This forces the agent to echo the old code to locate the edit, then echo the entire new file as output. On large files that wastes thousands of tokens per edit.
 
-Scalpel exposes four MCP tools that operate on symbol names:
+Tokenspace exposes four MCP tools that operate on symbol names:
 
 ```
 edit_function_body("auth.py", "validate_token", new_body)
@@ -22,12 +22,12 @@ No echoing. No stale line numbers. Every edit returns a diff, a blast radius sco
 
 Measured on **406 real functions** across 10 popular OSS projects (requests, flask, fastapi, django, httpx, pydantic, black, click, rich). All files verified with libcst round-trip.
 
-| Scenario | str\_replace | Scalpel | Reduction |
+| Scenario | str\_replace | Tokenspace | Reduction |
 |---|---|---|---|
 | Single edit — 406 functions total | 36,907 tokens | 18,674 tokens | **49.4%** |
 | 5 edits / same file — 10 files total | 70,948 tokens | 2,039 tokens | **95.4%** |
 
-The multi-edit gap is large because `str_replace` pays the full file on every call. Scalpel pays for `read_structure` once and only the function name + new body per subsequent edit.
+The multi-edit gap is large because `str_replace` pays the full file on every call. Tokenspace pays for `read_structure` once and only the function name + new body per subsequent edit.
 
 ## MCP Tools
 
@@ -47,36 +47,16 @@ The multi-edit gap is large because `str_replace` pays the full file on every ca
 ## Install
 
 ```bash
-pip install scalpel-mcp
+pip install tokenspace-mcp
+tokenspace install-skill
 ```
 
-### Add to Claude Code
+Then restart Claude Code. Tokenspace tools will be available automatically.
 
-```bash
-scalpel install-skill
-```
-
-Copies `.claude/SKILL.md` to your working directory so any Claude Code session knows the optimal Scalpel workflow automatically.
-
-### Configure Claude Code MCP
-
-Add to your `claude_code_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "scalpel": {
-      "command": "scalpel"
-    }
-  }
-}
-```
-
-Or run directly:
-
-```bash
-scalpel
-```
+The second command:
+- Copies the Claude Code skill to `.claude/SKILL.md`
+- Registers the MCP server in `.claude/settings.json`
+- After restart, Claude Code knows when and how to use all 4 tools
 
 ## Optimal workflow
 

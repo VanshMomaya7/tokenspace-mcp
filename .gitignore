@@ -10,3 +10,7 @@ wheels/
 .venv
 
 # Benchmark results are committed intentionally — do not ignore
+
+# Credentials — never commit
+~/.pypirc/
+*.env

@@ -2,17 +2,18 @@
 from __future__ import annotations
 
 import importlib.resources
+import json
 import pathlib
 import sys
 
 from mcp.server.fastmcp import FastMCP
 
-from scalpel import core
-from scalpel.types import format_result
+from tokenspace import core
+from tokenspace.types import format_result
 
 __all__: list[str] = []
 
-mcp = FastMCP("scalpel")
+mcp = FastMCP("tokenspace")
 
 
 @mcp.tool()
@@ -82,14 +83,28 @@ def measure_edit(file_path: str, function_name: str, new_body: str) -> str:
 
 def install_skill() -> None:
     skill_text = (
-        importlib.resources.files("scalpel")
+        importlib.resources.files("tokenspace")
         .joinpath("SKILL.md")
         .read_text(encoding="utf-8")
     )
     dest = pathlib.Path(".claude") / "SKILL.md"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(skill_text, encoding="utf-8")
-    print("✓ Scalpel skill installed to .claude/SKILL.md")
+    print("Skill installed: .claude/SKILL.md")
+
+    settings_path = pathlib.Path(".claude") / "settings.json"
+    config: dict[str, object] = (
+        json.loads(settings_path.read_text(encoding="utf-8"))
+        if settings_path.exists()
+        else {}
+    )
+    mcp_servers = config.setdefault("mcpServers", {})
+    assert isinstance(mcp_servers, dict)
+    if "tokenspace" not in mcp_servers:
+        mcp_servers["tokenspace"] = {"command": "tokenspace", "args": []}
+        settings_path.write_text(json.dumps(config, indent=2), encoding="utf-8")
+    print("MCP server registered: .claude/settings.json")
+    print("Restart Claude Code to activate Tokenspace.")
 
 
 def main() -> None:

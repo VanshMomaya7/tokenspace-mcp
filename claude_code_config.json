@@ -1,9 +1,10 @@
 {
   "mcpServers": {
-    "scalpel": {
+    "tokenspace": {
       "command": "uv",
-      "args": ["run", "python", "-m", "scalpel.server"],
+      "args": ["run", "python", "-m", "tokenspace.server"],
       "cwd": "."
+      
     }
   }
 }

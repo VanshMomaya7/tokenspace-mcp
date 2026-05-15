@@ -1,4 +1,4 @@
-"""Benchmark harness: str_replace vs scalpel vs measure_edit on 10 fixture files."""
+"""Benchmark harness: str_replace vs tokenspace vs measure_edit on 10 fixture files."""
 from __future__ import annotations
 
 import csv
@@ -11,7 +11,7 @@ import libcst as cst
 import tiktoken
 from libcst.metadata import MetadataWrapper, PositionProvider
 
-from scalpel.core import edit_class_method, edit_function_body, measure_edit, read_structure
+from tokenspace.core import edit_class_method, edit_function_body, measure_edit, read_structure
 
 TASKS_DIR = pathlib.Path(__file__).parent / "tasks"
 RESULTS_DIR = pathlib.Path(__file__).parent / "results"
@@ -28,7 +28,7 @@ class MultiEditRow:
     file: str
     n_edits: int
     str_replace_tokens: int
-    scalpel_tokens: int
+    tokenspace_tokens: int
     reduction_pct: float
 
 
@@ -142,7 +142,7 @@ def run_str_replace(
     )
 
 
-def run_scalpel(source: str, sym: Symbol, new_body: str) -> Row:
+def run_tokenspace(source: str, sym: Symbol, new_body: str) -> Row:
     with tempfile.NamedTemporaryFile(
         suffix=".py", mode="w", encoding="utf-8", delete=False
     ) as tmp:
@@ -161,7 +161,7 @@ def run_scalpel(source: str, sym: Symbol, new_body: str) -> Row:
         return Row(
             file="",
             function=_label(sym),
-            approach="scalpel",
+            approach="tokenspace",
             success=False,
             input_tokens=0,
             output_tokens=0,
@@ -178,7 +178,7 @@ def run_scalpel(source: str, sym: Symbol, new_body: str) -> Row:
     return Row(
         file="",
         function=_label(sym),
-        approach="scalpel",
+        approach="tokenspace",
         success=True,
         input_tokens=max(0, input_t),
         output_tokens=diff_t,
@@ -243,27 +243,27 @@ def run_measure(path: pathlib.Path, source: str, sym: Symbol, new_body: str) -> 
 def multi_edit_stats(
     path: pathlib.Path, source: str, symbols: list[Symbol], n: int = 5
 ) -> MultiEditRow:
-    """Cost of n sequential edits: str_replace pays full file each time; scalpel pays structure once."""
+    """Cost of n sequential edits: str_replace pays full file each time; tokenspace pays structure once."""
     selected = symbols[:n]
     struct_tokens = _t(read_structure(str(path)))
 
     str_replace_total = 0
-    scalpel_edit_total = 0
+    tokenspace_edit_total = 0
     for sym in selected:
         _, body_text = extract_texts(source, sym)
         new_body = make_new_body(body_text)
         fn_id = f"{sym.class_name}.{sym.fn_name}" if sym.class_name else sym.fn_name
 
         str_replace_total += _t(source) + _t(body_text) + _t(new_body)
-        scalpel_edit_total += _t(fn_id) + _t(new_body)
+        tokenspace_edit_total += _t(fn_id) + _t(new_body)
 
-    scalpel_total = struct_tokens + scalpel_edit_total
-    reduction = 100.0 * (str_replace_total - scalpel_total) / str_replace_total if str_replace_total else 0.0
+    tokenspace_total = struct_tokens + tokenspace_edit_total
+    reduction = 100.0 * (str_replace_total - tokenspace_total) / str_replace_total if str_replace_total else 0.0
     return MultiEditRow(
         file=path.name,
         n_edits=len(selected),
         str_replace_tokens=str_replace_total,
-        scalpel_tokens=scalpel_total,
+        tokenspace_tokens=tokenspace_total,
         reduction_pct=reduction,
     )
 
@@ -273,14 +273,14 @@ def print_multi_edit_summary(multi_rows: list[MultiEditRow]) -> None:
     col_w = 28
     header = (
         f"{'Multi-edit (' + str(n) + ' edits / file)':<{col_w}}| "
-        f"{'str_replace total':>18} | {'scalpel total':>14} | {'Reduction':>10}"
+        f"{'str_replace total':>18} | {'tokenspace total':>14} | {'Reduction':>10}"
     )
     sep = "-" * len(header)
     print(sep)
     print(header)
     print(sep)
     avg_sr = sum(r.str_replace_tokens for r in multi_rows) / len(multi_rows)
-    avg_sc = sum(r.scalpel_tokens for r in multi_rows) / len(multi_rows)
+    avg_sc = sum(r.tokenspace_tokens for r in multi_rows) / len(multi_rows)
     avg_red = sum(r.reduction_pct for r in multi_rows) / len(multi_rows)
     print(
         f"{'avg across ' + str(len(multi_rows)) + ' files':<{col_w}}| "
@@ -293,7 +293,7 @@ def print_multi_edit_summary(multi_rows: list[MultiEditRow]) -> None:
 
 
 def print_summary(rows: list[Row]) -> None:
-    approaches = ["str_replace", "scalpel", "measure_edit"]
+    approaches = ["str_replace", "tokenspace", "measure_edit"]
     col_w = 18
 
     header = (
@@ -322,12 +322,12 @@ def print_summary(rows: list[Row]) -> None:
 
     print(sep)
 
-    if "str_replace" in avgs and "scalpel" in avgs:
+    if "str_replace" in avgs and "tokenspace" in avgs:
         sr_total = avgs["str_replace"][1]
-        sc_total = avgs["scalpel"][1]
+        sc_total = avgs["tokenspace"][1]
         if sr_total > 0:
             reduction = 100.0 * (sr_total - sc_total) / sr_total
-            print(f"Token reduction (scalpel vs str_replace):  {reduction:.1f}%")
+            print(f"Token reduction (tokenspace vs str_replace):  {reduction:.1f}%")
 
     print(sep)
 
@@ -366,7 +366,7 @@ def main() -> None:
 
             for row in (
                 run_str_replace(source, sym, full_fn_text, body_text, new_body),
-                run_scalpel(source, sym, new_body),
+                run_tokenspace(source, sym, new_body),
                 run_measure(task_path, source, sym, new_body),
             ):
                 row.file = file_label

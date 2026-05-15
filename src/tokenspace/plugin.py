@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from scalpel.types import EditResult
+from tokenspace.types import EditResult
 
 __all__ = ["LanguagePlugin"]
 

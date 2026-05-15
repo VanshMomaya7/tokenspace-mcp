@@ -10,8 +10,8 @@ import libcst as cst
 from libcst import FlattenSentinel, RemovalSentinel
 from libcst.metadata import MetadataWrapper, PositionProvider
 
-from scalpel.measure import blast_radius, patch_locality, token_cost
-from scalpel.types import EditResult
+from tokenspace.measure import blast_radius, patch_locality, token_cost
+from tokenspace.types import EditResult
 
 __all__ = [
     "find_symbol",

@@ -3,8 +3,8 @@ from __future__ import annotations
 import libcst as cst
 import pytest
 
-from scalpel.core import edit_class_method, edit_function_body, find_symbol, read_structure
-from scalpel.types import EditResult
+from tokenspace.core import edit_class_method, edit_function_body, find_symbol, read_structure
+from tokenspace.types import EditResult
 
 
 # ── find_symbol ───────────────────────────────────────────────────────────────

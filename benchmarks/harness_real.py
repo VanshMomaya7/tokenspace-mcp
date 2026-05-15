@@ -2,9 +2,9 @@
 
 Step 1: Download → benchmarks/tasks/real/
 Step 2: libcst round-trip verification (skip failures)
-Step 3: Benchmark (str_replace vs scalpel vs measure_edit)
+Step 3: Benchmark (str_replace vs tokenspace vs measure_edit)
         - Skip functions whose body has < 3 non-empty, non-comment lines
-        - Skip functions where libcst/scalpel raises a parse error
+        - Skip functions where libcst/tokenspace raises a parse error
 Step 4: Summary table + CSV at benchmarks/results/benchmark_real.csv
 """
 from __future__ import annotations
@@ -32,7 +32,7 @@ from harness import (  # noqa: E402
     print_multi_edit_summary,
     print_summary,
     run_measure,
-    run_scalpel,
+    run_tokenspace,
     run_str_replace,
 )
 
@@ -185,17 +185,17 @@ def main() -> None:
             full_fn_text, body_text = extract_texts(source, sym)
             new_body = make_new_body(body_text)
 
-            scalpel_row = run_scalpel(source, sym, new_body)
-            if not scalpel_row.success:
-                err_msg = (scalpel_row.error or "").lower()
+            tokenspace_row = run_tokenspace(source, sym, new_body)
+            if not tokenspace_row.success:
+                err_msg = (tokenspace_row.error or "").lower()
                 if any(kw in err_msg for kw in _PARSE_ERROR_KEYWORDS):
-                    print(f"  skip {label}:{_label(sym)} - {scalpel_row.error}")
+                    print(f"  skip {label}:{_label(sym)} - {tokenspace_row.error}")
                     n_err += 1
                     continue
 
             for row in (
                 run_str_replace(source, sym, full_fn_text, body_text, new_body),
-                scalpel_row,
+                tokenspace_row,
                 run_measure(task_path, source, sym, new_body),
             ):
                 row.file = label

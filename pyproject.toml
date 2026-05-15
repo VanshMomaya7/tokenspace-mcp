@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "scalpel-mcp"
-version = "0.1.2"
+name = "tokenspace-mcp"
+version = "0.1.0"
 description = "Surgical AST-based Python editing for AI agents — edit by symbol name, not text position. Built-in blast radius and token cost on every edit."
 readme = "README.md"
 license = { text = "MIT" }
@@ -27,11 +27,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/VanshMomaya7/scalpel"
-Repository = "https://github.com/VanshMomaya7/scalpel"
+Homepage = "https://github.com/VanshMomaya7/tokenspace"
+Repository = "https://github.com/VanshMomaya7/tokenspace"
 
 [project.scripts]
-scalpel = "scalpel.server:main"
+tokenspace = "tokenspace.server:main"
 
 [dependency-groups]
 dev = [
@@ -42,7 +42,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/scalpel"]
+packages = ["src/tokenspace"]
 artifacts = [".claude/SKILL.md"]
 
 [tool.pytest.ini_options]

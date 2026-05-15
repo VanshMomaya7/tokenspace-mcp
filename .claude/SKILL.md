@@ -1,13 +1,13 @@
-# Scalpel — MCP Skill
+# Tokenspace — MCP Skill
 
-Scalpel edits Python functions and methods by symbol name, not text position.
+Tokenspace edits Python functions and methods by symbol name, not text position.
 Every edit returns a diff, blast radius, and token cost automatically.
 
 ---
 
-## When to use Scalpel (not str_replace)
+## When to use Tokenspace (not str_replace)
 
-**Use Scalpel when:**
+**Use Tokenspace when:**
 - Editing a specific Python function or method by name
 - You need to understand what's in a file before editing (use `read_structure` — 3.4× cheaper than reading the file)
 - You want to estimate cost and risk before writing (use `measure_edit` — dry run, no disk write)
@@ -187,12 +187,12 @@ edit_class_method(
 
 Measured on **406 real functions** from requests, flask, fastapi, django, httpx, pydantic, black, click, and rich. All 10 files passed libcst round-trip.
 
-| Scenario | str_replace total tokens | Scalpel total tokens | Reduction |
+| Scenario | str_replace total tokens | Tokenspace total tokens | Reduction |
 |---|---|---|---|
 | Single edit — 406 functions | 36,907 | 18,674 | **49.4%** |
 | 5 edits / file — 10 files | 70,948 | 2,039 | **95.4%** |
 
-The multi-edit gap is large because `str_replace` pays full file content on every single edit. Scalpel pays for `read_structure` once and only the function name + new body per edit.
+The multi-edit gap is large because `str_replace` pays full file content on every single edit. Tokenspace pays for `read_structure` once and only the function name + new body per edit.
 
 ---
 
